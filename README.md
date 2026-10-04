@@ -76,6 +76,7 @@ tprm-travel-saas-case-study/
     ├── assessment-workbook.xlsx      answers, findings, risks, actions, monitoring
     ├── decision-memo.md              includes the management summary
     └── incident-scenario.md          tabletop: stolen connector credential
+    └── dashboard.png                 The KRIs only start after go-live
 ```
 
 ## How to read it
@@ -113,4 +114,5 @@ Content is released under CC BY 4.0. You may share and adapt it with attribution
 
 ## Author
 
-[Your name] · [LinkedIn URL]
+Yogesh Gandal 
+Drafted with AI assistance (Claude, by Anthropic). The scenario, decisions and review are by the author.
