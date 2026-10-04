@@ -2,8 +2,8 @@
 
 > **Fictional case study.** Example Bank and Vendor X are placeholders. Legal and standard references are indicative and must be checked against the official texts. Drafted with AI assistance and reviewed by the author.
 >
-> **Status:** Draft for author review.
-> **Builds on:** Stage 1 v1.0 (scope, data, Tier 1), Stage 2 (claims V1 to V12, fourth parties FP1 to FP10), Stage 3 v1.0, frozen (flows, observations X1 to X12).
+> **Status:** Confirmed by author.
+> **Builds on:** Stage 1 v1.0 (scope, data, Tier 1), Stage 2 (claims V1 to V13, fourth parties FP1 to FP10), Stage 3 v1.0, frozen (flows, observations X1 to X12).
 
 ## 1. Purpose and method
 
@@ -30,7 +30,7 @@ Worked example:
 | Stage | What it provides | IDs used |
 |---|---|---|
 | 1 | Scope, data types, inherent risk, Tier 1, regulations | S1 to S12, D1 to D16, F1 to F9, R1 to R10, A1 to A11 |
-| 2 | Vendor claims and fourth parties | V1 to V12, FP1 to FP10, A12 |
+| 2 | Vendor claims and fourth parties | V1 to V13, FP1 to FP10, A12 |
 | 3 | Flows, boundaries, exposures | FS, FA, F1 to F12, FG, FN, FL, FH, FV, FW1 to FW3, X1 to X12, A13 to A16 |
 
 ## 3. Control requirements (28)
@@ -64,7 +64,7 @@ Worked example:
 | CR-25 | **Contract terms.** The contract contains the DORA Art 30(2) terms and, because the service is Tier 1, the Art 30(3) terms, including audit rights and exit. | No legal basis to enforce the controls | R1; Tier 1 | N1, N2, N3, N4, N5, N6, N7 |
 | CR-26 | **Tenant isolation.** Customer tenants are logically separated, tested and prevented from accessing each other's data. | One client sees another client's data | V12; F4 | I8 |
 | CR-27 | **Architecture transparency.** The vendor documents its edition, interfaces and data flows, keeps them current, and tells the bank about changes. | The bank assesses a picture that no longer matches reality | Stage 3; all flows | A1, A3, E2 |
-| CR-28 | **AI and automation.** AI features and model providers are disclosed, bank data is not used for model training unless agreed, and automated actions stay under human control. | Bank data leaks into models, or automated actions go unchecked | AI note; V13 (to add in Stage 2) | W1, W2, W3 |
+| CR-28 | **AI and automation.** AI features and model providers are disclosed, bank data is not used for model training unless agreed, and automated actions stay under human control. | Bank data leaks into models, or automated actions go unchecked | AI note; V13 | W1, W2, W3 |
 
 ## 4. Framework mapping
 
@@ -137,7 +137,7 @@ References are at article or control level. DORA is Regulation (EU) 2022/2554. G
 | V10 No real data in test | CR-12 |
 | V11 Encryption | CR-13 |
 | V12 Tenant separation | CR-26 |
-| V13 AI features (to add in Stage 2) | CR-28 |
+| V13 AI features | CR-28 |
 
 Every question is linked to at least one control requirement, and every flow in the Stage 3 table appears in at least one question. Both checks were run when the workbook was built.
 
@@ -202,8 +202,8 @@ Question IDs are a domain letter plus a number (for example H1). In the traceabi
 
 | Addition | Where it landed |
 |---|---|
-| AI features and model providers | Questions W1 to W3 and CR-28. Claim V13 is to be added in Stage 2 |
-| NIS2 note | Section 4. A matching one-line note is to be added in Stage 1 |
+| AI features and model providers | Questions W1 to W3 and CR-28. Claim V13 is in the Stage 2 claims register |
+| NIS2 note | Section 4, and a matching note in Stage 1 section 7 |
 | ISO 27001 view | Section 8 and the workbook sheet |
 | Risk register, monitoring indicators, incident scenario, management summary | Planned for Stage 5 |
 | Three perspectives (TPRM, ISO 27001, IT risk and GRC) | The final README |
