@@ -22,7 +22,7 @@ Worked example:
 | Risk | A stolen credential allows bulk reading of employee data |
 | Control requirement | CR-03: credentials are held in a vault, readable only by named roles, with access logged |
 | Frameworks | DORA Art 9, GDPR Art 32, ISO 27001 A.5.17 and A.8.24 |
-| Questions | E3, O3 |
+| Questions | E3, O3 (vendor-questionnaire-and-control-map.xlsx, Questionnaire sheet, column A) |
 | Vendor answer and finding | Stage 5 |
 
 ## 2. Inputs
