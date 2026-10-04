@@ -1,6 +1,6 @@
 # Stage 5: Assessment, findings and risk
 
-> **Fictional case study. Everything Vendor X says, shows or provides in this stage is simulated.** Names, dates, evidence and numbers are invented. Legal references are indicative and must be checked against the official texts. Drafted with AI assistance (Claude), to be reviewed by the author.
+> **Fictional case study. Everything Vendor X says, shows or provides in this stage is simulated.** Names, dates, evidence and numbers are invented. Legal references are indicative and must be checked against the official texts. Drafted with AI assistance and reviewed by the author.
 >
 > **Status:** Confirmed by author.
 > **Builds on:** Stage 1 v1.0, Stage 2, Stage 3 v1.0 (frozen) and Stage 4 (controls, questionnaire, mapping).
