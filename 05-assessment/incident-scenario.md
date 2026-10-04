@@ -1,8 +1,8 @@
 # Incident scenario: stolen connector credential (tabletop)
 
-> **Fictional case study. The scenario, times and results are simulated.** Drafted with AI assistance (Claude), to be reviewed by the author. Regulatory deadlines are indicative. Check the current texts and the bank's own incident process.
+> **Fictional case study. The scenario, times and results are simulated.** Drafted with AI assistance and reviewed by the author. Regulatory deadlines are indicative. Check the current texts and the bank's own incident process.
 >
-> **Status:** Draft for author review.
+> **Status:** Confirmed by author.
 
 ## 1. Why this scenario
 
