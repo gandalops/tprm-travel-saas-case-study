@@ -1,8 +1,8 @@
 # Stage 1: Business process, scoping and inherent risk
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All figures are assumptions made for this exercise. Drafted with AI assistance (Claude), to be reviewed by the author. Legal references are indicative and must be checked against the official texts.
+> **Fictional case study.** Example Bank and Vendor X are placeholders. All figures are assumptions made for this exercise. Drafted with AI assistance, reviewed by the author. Legal references are indicative and must be checked against the official texts.
 >
-> **Status:** Version 1.0, scope frozen.
+> **Status:** Version 1.0, scope frozen. Confirmed by author.
 > **Change rule:** later stages must not change the scope. Any change goes into the change log at the end.
 
 ## 1. Why this service exists
@@ -221,6 +221,7 @@ The bank is the regulated party. It assesses the vendor to meet its own obligati
 | R8 | ISO/IEC 27001 and SOC 2 | Not laws, but the main way vendors evidence controls | Whether scope covers this service | Certificate or report, bridge letter |
 | R9 | Regional rules outside the EU (Asia, wider EMEA, US, Mexico) | Local staff, local regulators and local data laws | Local data protection and data localisation limits, and local third-party or outsourcing rules | Regional compliance mapping |
 | R10 | Tax and payroll rules on daily allowances | Allowance rates differ by country | Rate-table accuracy and audit trail | Rate-table configuration, change log |
+| R11 | NIS2, Directive (EU) 2022/2555 | May apply to the vendor as a service provider. For the bank, DORA is the specific rule | Not mapped question by question. Applicability to be verified | To be confirmed after verification |
 
 **Examples for R9 (to be verified by the author):** the UK PRA expectations on outsourcing and third-party risk, the US interagency guidance on third-party relationships, and the Singapore MAS outsourcing guidelines. Each country needs its own check.
 
