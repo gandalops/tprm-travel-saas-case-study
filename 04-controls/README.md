@@ -160,7 +160,7 @@ Every question is linked to at least one control requirement, and every flow in 
 
 | Severity | Test |
 |---|---|
-| High | Could expose bulk personal data, allow fraudulent payment, or give unauthorised access into the bank |
+| High | Could expose bulk personal data, allow fraudulent payment, give unauthorised access into the bank, or leave a mandatory contract term for a critical service unmet |
 | Medium | Weakens a control, but another control compensates |
 | Low | Documentation or minor |
 
