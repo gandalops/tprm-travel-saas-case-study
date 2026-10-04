@@ -52,6 +52,7 @@ The ISO 27001 view is a coverage view of the controls this assessment tests. It 
 | Findings | 22: 5 High, 16 Medium, 1 Low |
 | Risks | 17 in the register. 2 Very high and 4 High today. No risk above Medium after the agreed remediation |
 | Decision | Conditional approval: close the High findings and the contract conditions before go-live, keep the AI assistant and virtual cards off until verified, and finish the Medium actions within 90 days |
+| Assessment dashboard | 05-assessment/dashboard.png |
 
 ## Repository map
 
