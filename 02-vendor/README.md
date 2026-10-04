@@ -2,7 +2,7 @@
 
 > **Fictional case study. All vendor information in this document is simulated.** Vendor X, Card Provider Y and every figure, date and certificate below are invented for the exercise. Drafted with AI assistance, to be reviewed by the author.
 >
-> **Status:** Reviewed by author. Revised on 3 Oct 2026 to record decision A12 (the vendor operates the connector). The only change since review is the added section 11.
+> **Status:** Confirmed by author. Revised on 4 Oct 2026 to record decision A12 (the vendor operates the connector), claim V13 and early observation 9.
 > **Builds on:** Stage 1 v1.0 (scope S1 to S12, data D1 to D16, Tier 1, critical or important function).
 
 ## 1. Purpose of this stage
@@ -112,6 +112,7 @@ Each row is something the vendor says. The last column shows what the bank must 
 | V10 | No real data in test environments | RFP response | Test data policy | Is production data ever copied for debugging? |
 | V11 | Customer data is encrypted | Security whitepaper | Encryption standard | Which algorithms, who holds the keys, and is a customer-managed key available? |
 | V12 | Tenant separation | Security whitepaper | Architecture description, test evidence | How is cross-tenant access prevented and tested? |
+| V13 | The platform uses AI features (itinerary suggestions, chat assistant), and customer data is not used to train models | RFP response | AI feature inventory, contract clause | Which model provider is used? Does bank data leave the vendor cloud for it? Can training use be switched off? |
 
 ## 8. Fourth parties and subprocessors
 
@@ -153,6 +154,7 @@ These come from the claims register. They are **hypotheses**, not findings.
 6. Subprocessor changes are announced on a website, with no advance notice or objection right.
 7. The vendor operates the connector, so the vendor holds the bank's service-account credentials.
 8. Several fourth parties have no contractual link to the bank.
+9. AI features may send data to a model provider not listed in FP1 to FP10.
 
 ## 11. Decisions made in this stage
 
@@ -163,7 +165,11 @@ These come from the claims register. They are **hypotheses**, not findings.
 ## 12. Handoff
 
 **To Stage 3 (architecture):** draw the zones (bank, connector, vendor cloud, suppliers), the flows for steps A and 1 to 12, mark where D1 to D16 cross a boundary, and mark the vendor-operated connector.
-**To Stage 4 (controls):** turn each claim V1 to V12 and each observation into a control requirement and a question, and add Tier 1 contract questions.
+**To Stage 4 (controls):** turn each claim V1 to V13 and each observation into a control requirement and a question, and add Tier 1 contract questions.
 **To Stage 5 (assessment):** simulate the vendor's evidence, record gaps and decide.
 
 **Traceability keys added in this stage:** V vendor claim, FP fourth party.
+
+## Addendum: FP11 (added after Stage 5, change PF-1)
+
+FP11: AI model provider, US. Runs the chat assistant and itinerary suggestions. Data: D1, D4, and free text that may contain D9. Likely role: processor, to confirm. No contract with the bank. Not disclosed in the vendor's fourth-party list. See the Stage 5 assessment overview, section 4.
