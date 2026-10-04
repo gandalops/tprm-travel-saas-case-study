@@ -2,7 +2,7 @@
 
 > **Fictional case study. Everything Vendor X says, shows or provides in this stage is simulated.** Names, dates, evidence and numbers are invented. Legal references are indicative and must be checked against the official texts. Drafted with AI assistance (Claude), to be reviewed by the author.
 >
-> **Status:** Draft for author review.
+> **Status:** Confirmed by author.
 > **Builds on:** Stage 1 v1.0, Stage 2, Stage 3 v1.0 (frozen) and Stage 4 (controls, questionnaire, mapping).
 
 ## 1. What this stage contains
@@ -80,7 +80,7 @@ Question W1 revealed that the chat assistant uses a third-party model provider i
 
 This shows how a frozen baseline handles new information: the baseline stays intact, and the change is traced to a finding and an action.
 
-## 5. Decision rules (proposed, for the author to confirm)
+## 5. Decision rules (Confirmed by author)
 
 | Rule | Effect |
 |---|---|
