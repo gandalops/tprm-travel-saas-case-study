@@ -141,3 +141,5 @@ The same steps apply to every row in section 4.
 
 **Traceability keys added in this stage:** FS, FA, F1 to F12, FG, FN, FL, FH, FV for flows. Z for zones. FW for boundaries. X for observations.
 
+Addendum (5 Oct 2026): data flow diagrams level 0 and level 1 added as supplementary views. No flow, boundary or observation changed.
+
