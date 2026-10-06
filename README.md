@@ -1,8 +1,6 @@
 # TPRM case study: onboarding a travel SaaS vendor at a bank
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor answers, evidence, dates and scores are simulated. Nothing here is based on a real organisation, vendor or assessment. Legal and standard references are indicative and should be checked against the official texts. This is not legal or compliance advice. Drafted with AI assistance, then reviewed and decided by the author.
->
-> **Status:** Confirmed by author.
+> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor answers, evidence, dates and scores are simulated. Nothing here is based on a real organisation, vendor or assessment. Legal and standard references are indicative and should be checked against the official texts. This is not legal or compliance advice. 
 
 ## What this is
 
@@ -113,6 +111,5 @@ Corrections and comments are welcome, especially from TPRM, compliance and secur
 Content is released under CC BY 4.0. You may share and adapt it with attribution. See `LICENSE`.
 
 ## Author
-
 Yogesh Gandal 
-Drafted with AI assistance (Claude, by Anthropic). The scenario, decisions and review are by the author.
+
