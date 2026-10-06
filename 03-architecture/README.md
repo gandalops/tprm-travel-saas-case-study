@@ -1,8 +1,7 @@
 # Stage 3: Architecture and data flows
 
-> **Fictional case study.** Example Bank, Vendor X and all flows are simulated. Protocols and ports are assumptions (typical defaults) and must be checked against a real integration specification. Drafted with AI assistance and reviewed by the author.
+> **Fictional case study.** Example Bank, Vendor X and all flows are simulated. Protocols and ports are assumptions (typical defaults) and must be checked against a real integration specification.
 >
-> **Status:** Frozen. Version 1.0, confirmed by author.
 > **Builds on:** Stage 1 v1.0 (scope S1 to S12, data D1 to D16, steps A and 1 to 12) and Stage 2 (claims V1 to V12, fourth parties FP1 to FP10, decision A12: the vendor operates the connector).
 
 ## 1. Purpose of this stage
@@ -125,21 +124,12 @@ The same steps apply to every row in section 4.
 
 ## 9. Assumptions made in this stage
 
-| ID | Assumption | Status |
+| ID | Assumption | Basis |
 |---|---|---|
-| A13 | Finance admins maintain the allowance rate table in the vendor console (F10) | To confirm |
-| A14 | The vendor pushes invoices to an intake endpoint of the ERP (F7) | To confirm |
-| A15 | The payment itself uses the bank's normal payment channels, outside the platform. F8 carries only the remittance advice | To confirm |
-| A16 | Users reach the vendor by browser with SSO. No VPN or private link is used | To confirm |
+| A13 | Finance admins maintain the allowance rate table in the vendor console (F10) | Assumption |
+| A14 | The vendor pushes invoices to an intake endpoint of the ERP (F7) | Assumption |
+| A15 | The payment itself uses the bank's normal payment channels, outside the platform. F8 carries only the remittance advice | Assumption |
+| A16 | Users reach the vendor by browser with SSO. No VPN or private link is used | Assumption |
 
-## 10. Handoff to Stage 4
-
-- Turn observations X1 to X12 into **control requirements**, each tagged to its flow, claim and regulation (R1 to R10).
-- Reuse the existing questionnaire questions listed in the table above and add the new ones.
-- Add questions for topics not yet covered: virtual cards, allowance, insurer hand-off, gifts, loyalty programmes, regional transfers and the Tier 1 contract terms.
-- Update the regulatory map for the new questions.
-
-**Traceability keys added in this stage:** FS, FA, F1 to F12, FG, FN, FL, FH, FV for flows. Z for zones. FW for boundaries. X for observations.
-
-Addendum (5 Oct 2026): data flow diagrams level 0 and level 1 added as supplementary views. No flow, boundary or observation changed.
+Addendum : Two data flow diagrams (level 0 and level 1) show the same flows by process and data store: dfd-level-0.png and dfd-level-1.png
 
