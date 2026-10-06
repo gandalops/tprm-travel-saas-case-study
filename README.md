@@ -106,7 +106,7 @@ tprm-travel-saas-case-study/
 
 Corrections and comments are welcome, especially from TPRM, compliance and security practitioners. Please open an issue.
 
-## Licence
+## LICENSE
 
 Content is released under CC BY 4.0. You may share and adapt it with attribution. See `LICENSE`.
 
