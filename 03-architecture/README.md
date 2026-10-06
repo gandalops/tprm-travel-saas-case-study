@@ -2,7 +2,7 @@
 
 > **Fictional case study.** Example Bank, Vendor X and all flows are simulated. Protocols and ports are assumptions (typical defaults) and must be checked against a real integration specification.
 >
-> **Builds on:** Stage 1 v1.0 (scope S1 to S12, data D1 to D16, steps A and 1 to 12) and Stage 2 (claims V1 to V12, fourth parties FP1 to FP10, decision A12: the vendor operates the connector).
+> **Builds on:** Stage 1 (scope, data, process steps) and Stage 2 (vendor claims, fourth parties, and decision A12: the vendor operates the connector).
 
 ## 1. Purpose of this stage
 
