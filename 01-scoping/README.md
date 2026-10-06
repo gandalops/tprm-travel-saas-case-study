@@ -1,9 +1,6 @@
 # Stage 1: Business process, scoping and inherent risk
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All figures are assumptions made for this exercise. Drafted with AI assistance, reviewed by the author. Legal references are indicative and must be checked against the official texts.
->
-> **Status:** Version 1.0, scope frozen. Confirmed by author.
-> **Change rule:** later stages must not change the scope. Any change goes into the change log at the end.
+> **Fictional case study.** Example Bank and Vendor X are placeholders. All figures are assumptions made for this exercise. Legal references are indicative and must be checked against the official texts.
 
 ## 1. Why this service exists
 
@@ -223,7 +220,7 @@ The bank is the regulated party. It assesses the vendor to meet its own obligati
 | R10 | Tax and payroll rules on daily allowances | Allowance rates differ by country | Rate-table accuracy and audit trail | Rate-table configuration, change log |
 | R11 | NIS2, Directive (EU) 2022/2555 | May apply to the vendor as a service provider. For the bank, DORA is the specific rule | Not mapped question by question. Applicability to be verified | To be confirmed after verification |
 
-**Examples for R9 (to be verified by the author):** the UK PRA expectations on outsourcing and third-party risk, the US interagency guidance on third-party relationships, and the Singapore MAS outsourcing guidelines. Each country needs its own check.
+**Examples for R9 (to be verified):** the UK PRA expectations on outsourcing and third-party risk, the US interagency guidance on third-party relationships, and the Singapore MAS outsourcing guidelines. Each country needs its own check.
 
 **Group view:** DORA applies to the EU financial entities. Non-EU branches and subsidiaries may fall under local regulators. The bank may need one group assessment plus local addenda.
 
@@ -264,43 +261,24 @@ Focus areas for later stages:
 9. Business continuity, disaster recovery and incident support
 10. Regional compliance for non-EU staff
 
-## 10. Assumptions and decisions (frozen)
+## 10. Assumptions and decisions
 
 | ID | Decision | Source |
 |---|---|---|
-| A1 | Bank is EU-headquartered with operations in the EU, Asia, wider EMEA, and the US and Mexico. About 20,000 employees | Author (size is an assumption) |
-| A2 | The platform is an ICT service under DORA | Recommended, see section 8 |
-| A3 | Classified as a critical or important function | Author |
+| A1 | Bank is EU-headquartered with operations in the EU, Asia, wider EMEA, and the US and Mexico. About 20,000 employees | confirm (size is an assumption) |
+| A2 | The platform is an ICT service under DORA | confirm, see section 8 |
+| A3 | Classified as a critical or important function | confirm |
 | A4 | Tier 1 | Follows from A3 |
-| A5 | Gifts, flowers and awards are in scope as miscellaneous business expenses, with controls | Author |
-| A6 | Guests are in scope. The guest has no access. A bank employee books on the guest's behalf | Author |
-| A7 | Virtual cards and loyalty or frequent flyer programmes are in scope. PCI DSS applies | Author |
-| A8 | The arrangement is treated as outsourcing as well as an ICT service | Recommended, see section 8 |
-| A9 | Daily allowance is calculated by the platform and paid by the bank's payroll or expense system. The vendor does not pay employees | Assumption, to confirm |
-| A10 | Insurance is the bank's group policy. The platform registers trips with the group insurer | Assumption, to confirm |
-| A11 | Guest confirmations go to the booker, not to the guest | Assumption, to confirm |
+| A5 | Gifts, flowers and awards are in scope as miscellaneous business expenses, with controls | confirm |
+| A6 | Guests are in scope. The guest has no access. A bank employee books on the guest's behalf | confirm |
+| A7 | Virtual cards and loyalty or frequent flyer programmes are in scope. PCI DSS applies | confirm |
+| A8 | The arrangement is treated as outsourcing as well as an ICT service | confirm, see section 8 |
+| A9 | Daily allowance is calculated by the platform and paid by the bank's payroll or expense system. The vendor does not pay employees | Assumption |
+| A10 | Insurance is the bank's group policy. The platform registers trips with the group insurer | Assumption |
+| A11 | Guest confirmations go to the booker, not to the guest | Assumption |
 
 ## 11. Output and handoff
 
 - Inherent risk: **very high (25 of 27)**
 - Criticality: **critical or important function**
 - Tier: **1**
-- Outsourcing: **yes**, with supervisor notification to be confirmed by compliance
-
-**To stage 2 (vendor profile):** who Vendor X is, hosting and regions, certifications claimed (including PCI DSS), subprocessors and the data each receives.
-**To stage 3 (architecture):** draw the flows for steps A and 1 to 12, mark where D1 to D16 cross a trust boundary, and identify exposed paths.
-**To stage 4 (controls):** extend the questionnaire with virtual cards, allowance, insurance hand-off, gifts, loyalty programmes and regional transfers, and apply the Tier 1 contract questions.
-
-**Open questions:**
-- Who operates the connector?
-- Where is the roster copy stored, and for how long?
-- Which suppliers are independent controllers and which are subprocessors?
-- Which card provider issues the virtual cards?
-
-**ID keys carried forward:** S scope, D data, F risk factor, R regulation, A assumption.
-
-## Change log
-
-| Version | Date | Change |
-|---|---|---|
-| 1.0 | 3 Oct 2026 | Scope frozen. Added global regions, finance, payroll and insurance functions, virtual cards, loyalty, gifts, and Tier 1 classification |
