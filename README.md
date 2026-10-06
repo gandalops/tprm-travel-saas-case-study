@@ -18,11 +18,12 @@ Every item carries an ID, so a reader can follow any thread from the architectur
 
 | Stage | Question it answers | Main deliverable |
 |---|---|---|
-| 1. Scoping and inherent risk | Why do we use this vendor, what data is involved, how critical is it, and which rules apply? | `01-scoping/scoping-and-inherent-risk.md` |
-| 2. Vendor profile | Who are they, what do they claim, and who are their suppliers? | `02-vendor/vendor-profile.md` |
-| 3. Architecture and data flow | How do the two parties connect, where are the trust boundaries, which paths are exposed? | `03-architecture/architecture-and-data-flows.md` and the diagram |
-| 4. Control requirements | What must be true, derived from risks first and mapped to frameworks second? | `04-controls/control-requirements.md` and the questionnaire workbook |
-| 5. Assessment and decision | What did we find, how big is the residual risk, and what do we decide? | `05-assessment/` |
+| 1. Scoping and inherent risk | Why do we use this vendor, what data is involved, how critical is it, and which rules apply? | `01-scoping/README.md` |
+| 2. Vendor profile | Who are they, what do they claim, and who are their suppliers? | `02-vendor/README.md` |
+| 3. Architecture and data flow | How do the two parties connect, where are the trust boundaries, which paths are exposed? | `03-architecture/README.md` and the diagram |
+| 4. Control requirements | What must be true, derived from risks first and mapped to frameworks second? | `04-controls/README.md` and the questionnaire workbook |
+| 5. Assessment and decision | What did we find, how big is the residual risk, and what do we decide? | `05-assessment/README.md` |
+| 6. Follow-up assessment | What moved after the vendor replied, and what the decision is now | `06-follow-up-assessment/README.md` |
 
 ## Architecture
 
@@ -57,24 +58,37 @@ The ISO 27001 view is a coverage view of the controls this assessment tests. It 
 ```
 tprm-travel-saas-case-study/
 ├── README.md
+├── LICENSE
+├── ids-and-abbreviations.md          meaning of every ID and abbreviation
 ├── traceability-matrix.xlsx          flow to decision, one row per thread
 ├── 01-scoping/
-│   └── scoping-and-inherent-risk.md
+│   └── README.md                     stage 1: scoping and inherent risk
 ├── 02-vendor/
-│   └── vendor-profile.md
+│   └── README.md                     stage 2: vendor profile
 ├── 03-architecture/
-│   ├── architecture-and-data-flows.md
+│   ├── README.md                     stage 3: architecture and data flows
 │   ├── network-architecture.png
-│   └── network-architecture.svg
+│   ├── network-architecture.svg
+│   ├── dfd-level-0.png
+│   └── dfd-level-1.png
 ├── 04-controls/
-│   ├── control-requirements.md
+│   ├── README.md                     stage 4: control requirements
 │   └── vendor-questionnaire-and-control-map.xlsx
-└── 05-assessment/
-    ├── assessment-overview.md
-    ├── assessment-workbook.xlsx      answers, findings, risks, actions, monitoring
-    ├── decision-memo.md              includes the management summary
-    └── incident-scenario.md          tabletop: stolen connector credential
-    └── dashboard.png                 The KRIs only start after go-live
+├── 05-assessment/
+│   ├── README.md                     stage 5: assessment, findings and risk
+│   ├── assessment-workbook.xlsx      answers, findings, risks, actions, monitoring
+│   ├── dashboard.png                 one-page view of the initial assessment
+│   ├── decision-memo.md              includes the management summary
+│   └── incident-scenario.md          tabletop: stolen connector credential
+└── 06-follow-up-assessment/
+    ├── README.md                     follow-up assessment: overview and results
+    ├── bank-request.md               the bank's follow-up questions
+    ├── vendor-response.md            the vendor's simulated reply
+    ├── vendor-physical-architecture.png
+    ├── follow-up-workbook.xlsx       questions, ratings, findings, four-score risks
+    ├── follow-up-dashboard.png       one-page before and after view
+    ├── decision-memo-follow-up.md    the updated decision
+    └── traceability-matrix-follow-up.xlsx
 ```
 
 ## How to read it
