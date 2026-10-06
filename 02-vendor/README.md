@@ -1,6 +1,7 @@
 # Stage 2: Vendor profile
 
 > **Fictional case study. All vendor information in this document is simulated.** Vendor X, Card Provider Y and every figure, date and certificate below are invented for the exercise.
+>
 >  **Builds on:** Stage 1 (scope S1 to S12, data D1 to D16, Tier 1, critical or important function)
 
 ## 1. Purpose of this stage
