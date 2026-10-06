@@ -1,8 +1,6 @@
 # Guide to the IDs and abbreviations
 
 > **Fictional case study.** Example Bank and Vendor X are placeholders, and all vendor data is simulated. This guide explains the short codes used in all five stages, so a reader can follow any item from the architecture to the decision.
->
-> **Status:** Confirmed by author.
 
 ## 1. The idea in 30 seconds
 
