@@ -198,7 +198,7 @@ DORA's own definition of a critical or important function (Art 3(22)) refers to 
 | Reputational damage from a failure or breach | **Yes** | Executive itineraries and passport data of a global workforce |
 | Scale and spread | Yes | Several regions, large workforce |
 
-**Decision (author): classified as a critical or important function.**
+**Decision : classified as a critical or important function.**
 
 Note for interviews: many banks would class a plain travel booking tool as non-critical. This case study chooses critical because of the duty of care, reputational impact and global scale, and it states that reasoning openly. In a real bank, the business and compliance teams decide.
 
@@ -263,22 +263,23 @@ Focus areas for later stages:
 
 ## 10. Assumptions and decisions
 
-| ID | Decision | Source |
+| ID | Decision | Basis |
 |---|---|---|
-| A1 | Bank is EU-headquartered with operations in the EU, Asia, wider EMEA, and the US and Mexico. About 20,000 employees | confirm (size is an assumption) |
-| A2 | The platform is an ICT service under DORA | confirm, see section 8 |
-| A3 | Classified as a critical or important function | confirm |
+| A1 | Bank is EU-headquartered with operations in the EU, Asia, wider EMEA, and the US and Mexico. About 20,000 employees | Case decision (size is an assumption) |
+| A2 | The platform is an ICT service under DORA | Case decision, see section 8 |
+| A3 | Classified as a critical or important function | Case decision |
 | A4 | Tier 1 | Follows from A3 |
-| A5 | Gifts, flowers and awards are in scope as miscellaneous business expenses, with controls | confirm |
-| A6 | Guests are in scope. The guest has no access. A bank employee books on the guest's behalf | confirm |
-| A7 | Virtual cards and loyalty or frequent flyer programmes are in scope. PCI DSS applies | confirm |
-| A8 | The arrangement is treated as outsourcing as well as an ICT service | confirm, see section 8 |
+| A5 | Gifts, flowers and awards are in scope as miscellaneous business expenses, with controls | Case decision |
+| A6 | Guests are in scope. The guest has no access. A bank employee books on the guest's behalf | Case decision |
+| A7 | Virtual cards and loyalty or frequent flyer programmes are in scope. PCI DSS applies | Case decision |
+| A8 | The arrangement is treated as outsourcing as well as an ICT service | see section 8 |
 | A9 | Daily allowance is calculated by the platform and paid by the bank's payroll or expense system. The vendor does not pay employees | Assumption |
 | A10 | Insurance is the bank's group policy. The platform registers trips with the group insurer | Assumption |
 | A11 | Guest confirmations go to the booker, not to the guest | Assumption |
 
-## 11. Output and handoff
+## 11. Output 
 
 - Inherent risk: **very high (25 of 27)**
 - Criticality: **critical or important function**
 - Tier: **1**
+- outsourcing: **yes**
