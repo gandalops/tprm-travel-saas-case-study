@@ -1,9 +1,7 @@
 # Stage 2: Vendor profile
 
-> **Fictional case study. All vendor information in this document is simulated.** Vendor X, Card Provider Y and every figure, date and certificate below are invented for the exercise. Drafted with AI assistance, to be reviewed by the author.
->
-> **Status:** Confirmed by author. Revised on 4 Oct 2026 to record decision A12 (the vendor operates the connector), claim V13 and early observation 9.
-> **Builds on:** Stage 1 v1.0 (scope S1 to S12, data D1 to D16, Tier 1, critical or important function).
+> **Fictional case study. All vendor information in this document is simulated.** Vendor X, Card Provider Y and every figure, date and certificate below are invented for the exercise.
+>  **Builds on:** Stage 1 (scope S1 to S12, data D1 to D16, Tier 1, critical or important function)
 
 ## 1. Purpose of this stage
 
@@ -158,15 +156,11 @@ These come from the claims register. They are **hypotheses**, not findings.
 
 ## 11. Decisions made in this stage
 
-| ID | Decision | Source |
+| ID | Decision | Basis |
 |---|---|---|
-| A12 | The vendor operates the connector, in a dedicated instance per client in the vendor's cloud. The vendor holds the credentials the bank supplies (read-only HR service account, approval endpoint access). The bank must allow connections from the vendor's cloud to its HR system. The vendor is assessed on its secrets handling, staff access and connector security | Author |
+| A12 | The vendor operates the connector, in a dedicated instance per client in the vendor's cloud. The vendor holds the credentials the bank supplies (read-only HR service account, approval endpoint access). The bank must allow connections from the vendor's cloud to its HR system. The vendor is assessed on its secrets handling, staff access and connector security | Case decision |
 
 ## 12. Handoff
-
-**To Stage 3 (architecture):** draw the zones (bank, connector, vendor cloud, suppliers), the flows for steps A and 1 to 12, mark where D1 to D16 cross a boundary, and mark the vendor-operated connector.
-**To Stage 4 (controls):** turn each claim V1 to V13 and each observation into a control requirement and a question, and add Tier 1 contract questions.
-**To Stage 5 (assessment):** simulate the vendor's evidence, record gaps and decide.
 
 **Traceability keys added in this stage:** V vendor claim, FP fourth party.
 
