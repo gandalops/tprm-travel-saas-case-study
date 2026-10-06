@@ -1,9 +1,8 @@
 # Stage 4: Control requirements and questionnaire
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. Legal and standard references are indicative and must be checked against the official texts. Drafted with AI assistance and reviewed by the author.
+> **Fictional case study.** Example Bank and Vendor X are placeholders. Legal and standard references are indicative and must be checked against the official texts. 
 >
-> **Status:** Confirmed by author.
-> **Builds on:** Stage 1 v1.0 (scope, data, Tier 1), Stage 2 (claims V1 to V13, fourth parties FP1 to FP10), Stage 3 v1.0, frozen (flows, observations X1 to X12).
+> **Builds on:** Stages 1 to 3 (scope and data, vendor claims and fourth parties, flows and observations X1 to X12).
 
 ## 1. Purpose and method
 
@@ -194,31 +193,6 @@ It shows how a vendor assessment draws on the same controls an ISMS implementer 
 | ISO 27001 view | Annex A controls tested |
 | Summary | Counts by domain, calculated by formula |
 
-New since the first workbook: domains for the connector and credentials, virtual cards, allowance, gifts and loyalty, regional transfers, insurance hand-off, and AI and automation, plus extra questions in existing domains.
-
 Question IDs are a domain letter plus a number (for example H1). In the traceability matrix they carry the prefix Q-, because D, F, R and S are also used for data, factors, regulations and scope.
-
-## 10. Additions from the job-market review
-
-| Addition | Where it landed |
-|---|---|
-| AI features and model providers | Questions W1 to W3 and CR-28. Claim V13 is in the Stage 2 claims register |
-| NIS2 note | Section 4, and a matching note in Stage 1 section 7 |
-| ISO 27001 view | Section 8 and the workbook sheet |
-| Risk register, monitoring indicators, incident scenario, management summary | Planned for Stage 5 |
-| Three perspectives (TPRM, ISO 27001, IT risk and GRC) | The final README |
-
-## 11. Handoff to Stage 5
-
-Stage 5 will:
-
-1. Simulate Vendor X's answers and evidence for the priority controls, with realistic weaknesses, and leave lower-priority questions unanswered.
-2. Record the **evidence log** and the **gap register**, with severity.
-3. Build the **risk register**: likelihood and impact, inherent risk, residual risk after controls.
-4. Write the **remediation plan** with owners and dates.
-5. Run one **incident scenario**, a stolen connector credential, to test notification and response.
-6. Define **monitoring indicators** and the reassessment schedule for a Tier 1 vendor.
-7. Write the **decision memo** (accept, mitigate, transfer or avoid, with conditions) and a one-page **management summary**.
-8. Build the **traceability matrix** linking flow, risk, control, framework, question, answer, finding and decision.
 
 **ID keys added in this stage:** CR for control requirements, W for the AI questions, and the Q- prefix for questions in the matrix.
