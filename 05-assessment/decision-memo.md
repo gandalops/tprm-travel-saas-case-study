@@ -1,8 +1,7 @@
 # Decision memo: onboarding Vendor X travel platform
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders, and the assessment results are simulated. Drafted with AI assistance and reviewed by the author.
+> **Fictional case study.** Example Bank and Vendor X are placeholders, and the assessment results are simulated. 
 >
-> **Status:** Confirmed by author.
 > **Date:** 4 Oct 2026
 
 ## 1. Management summary
@@ -96,7 +95,7 @@ Thirteen key risk indicators are reviewed monthly or quarterly (for example days
 | Compliance | | Pending | |
 | Head of Finance | | Pending | |
 | Legal and Procurement | | Pending | |
-| Third-party risk (author) | | Recommends conditional approval | 4 Oct 2026 |
+| Third-party risk analyst | | Recommends conditional approval | 4 Oct 2026 |
 | Risk committee (final approval) | | Pending | |
 
 ## 8. Where to find the detail
