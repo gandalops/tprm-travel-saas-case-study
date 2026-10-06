@@ -1,9 +1,8 @@
 # Stage 5: Assessment, findings and risk
 
-> **Fictional case study. Everything Vendor X says, shows or provides in this stage is simulated.** Names, dates, evidence and numbers are invented. Legal references are indicative and must be checked against the official texts. Drafted with AI assistance and reviewed by the author.
+> **Fictional case study. Everything Vendor X says, shows or provides in this stage is simulated.** Names, dates, evidence and numbers are invented. Legal references are indicative and must be checked against the official texts. 
 >
-> **Status:** Confirmed by author.
-> **Builds on:** Stage 1 v1.0, Stage 2, Stage 3 v1.0 (frozen) and Stage 4 (controls, questionnaire, mapping).
+> **Builds on:** Stages 1 to 4.
 
 ## 1. What this stage contains
 
@@ -71,7 +70,7 @@ Question W1 revealed that the chat assistant uses a third-party model provider i
 
 | Item | Treatment |
 |---|---|
-| New fourth party | FP11: AI model provider, US. To be added to Stage 2 by the author as an addendum |
+| New fourth party | FP11: AI model provider, US. Recorded as an addendum at the end of Stage 2 |
 | New flow | **FI:** platform to AI model provider. Data: D1, D4, and free text that may include D9. HTTPS, opened by the platform, crosses FW3 |
 | New risk | RR-03 |
 | Controls | CR-28 and CR-16 |
@@ -80,7 +79,7 @@ Question W1 revealed that the chat assistant uses a third-party model provider i
 
 This shows how a frozen baseline handles new information: the baseline stays intact, and the change is traced to a finding and an action.
 
-## 5. Decision rules (Confirmed by author)
+## 5. Decision rules 
 
 | Rule | Effect |
 |---|---|
@@ -94,12 +93,7 @@ This shows how a frozen baseline handles new information: the baseline stays int
 ## 6. Assumptions and limits
 
 - Go-live target is 1 Feb 2027. Pre-go-live actions are due by 15 Jan 2027, and the 90-day actions by 30 Apr 2027.
-- The 90-day rotation period, the 24-hour notification period and the 90-day guest retention are proposed defaults. The author or the bank's policy can change them.
+- The 90-day rotation period, the 24-hour notification period and the 90-day guest retention are are assumed defaults. A real bank's policy would set them.
 - Likelihood and impact are scored 1 to 5 by judgement and are not calibrated with data.
 - The evidence is invented. Its value is in showing the method, not in the values.
 
-## 7. Handoff
-
-- **Decision memo:** the decision, treatment of each risk, conditions, sign-offs.
-- **Incident scenario:** a tabletop of the stolen credential, using the findings.
-- **Final README:** the three perspectives (TPRM, ISO 27001, IT risk and GRC), the repository map, and the closing lessons.
