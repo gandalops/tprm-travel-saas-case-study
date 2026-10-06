@@ -8,7 +8,7 @@
 
 The initial assessment gave a conditional decision with 22 findings, 5 of them High, and left 23 questions unassessed. The vendor has since seen the data flow diagrams, and the bank now needs the **physical view**: protocols, encryption, network segmentation, support access and secure development. This request asks for that, and for the evidence that would let the bank re-rate the open findings.
 
-The follow-up does not change the initial assessment. It adds evidence, and the re-rating is recorded separately (see `follow-up-overview.md`).
+The follow-up does not change the initial assessment. It adds evidence, and the re-rating is recorded separately (see `README.md`).
 
 ## 2. How to reply
 
