@@ -1,8 +1,6 @@
 # Decision memo: onboarding Vendor X travel platform (after the follow-up assessment)
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts. Drafted with AI assistance and reviewed by the author.
->
-> **Status:** Confirmed by author.
+> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts. 
 
 > **Date:** 4 Dec 2026. **Replaces:** the memo of 4 Oct 2026 (kept unchanged in `05-assessment`). **For:** risk committee, 11 Dec 2026.
 
