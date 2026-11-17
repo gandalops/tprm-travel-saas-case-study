@@ -93,7 +93,7 @@ This shows how a frozen baseline handles new information: the baseline stays int
 ## 6. Assumptions and limits
 
 - Go-live target is 1 Feb 2027. Pre-go-live actions are due by 15 Jan 2027, and the 90-day actions by 30 Apr 2027.
-- The 90-day rotation period, the 24-hour notification period and the 90-day guest retention are are assumed defaults. A real bank's policy would set them.
+- The 90-day rotation period, the 24-hour notification period and the 90-day guest retention are assumed defaults. A real bank's policy would set them.
 - Likelihood and impact are scored 1 to 5 by judgement and are not calibrated with data.
 - The evidence is invented. Its value is in showing the method, not in the values.
 
