@@ -28,7 +28,7 @@ Worked example:
 
 | Stage | What it provides | IDs used |
 |---|---|---|
-| 1 | Scope, data types, inherent risk, Tier 1, regulations | S1 to S12, D1 to D16, F1 to F9, R1 to R10, A1 to A11 |
+| 1 | Scope, data types, inherent risk, Tier 1, regulations | S1 to S12, D1 to D16, F1 to F9, R1 to R11, A1 to A11 |
 | 2 | Vendor claims and fourth parties | V1 to V13, FP1 to FP10, A12 |
 | 3 | Flows, boundaries, exposures | FS, FA, F1 to F12, FG, FN, FL, FH, FV, FW1 to FW3, X1 to X12, A13 to A16 |
 
@@ -194,5 +194,3 @@ It shows how a vendor assessment draws on the same controls an ISMS implementer 
 | Summary | Counts by domain, calculated by formula |
 
 Question IDs are a domain letter plus a number (for example H1). In the traceability matrix they carry the prefix Q-, because D, F, R and S are also used for data, factors, regulations and scope.
-
-**ID keys added in this stage:** CR for control requirements, W for the AI questions, and the Q- prefix for questions in the matrix.
