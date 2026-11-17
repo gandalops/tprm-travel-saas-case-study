@@ -35,9 +35,9 @@ Arrows point from the system that opens the connection to the system that receiv
 
 | Perspective | Question | Where to look | Answer in this case |
 |---|---|---|---|
-| **TPRM** | Should we onboard this vendor? | `05-assessment/decision-memo.md` | Conditional approval. Not approved until the pre-go-live conditions are verified |
+| **TPRM** | Should we onboard this vendor? | `05-assessment/decision-memo.md` and `06-follow-up-assessment/decision-memo-follow-up.md` | Conditional approval. Not approved until the pre-go-live conditions are verified After the follow-up: kept, and go-live not yet cleared|
 | **ISO 27001** | Which controls apply and what evidence do we expect? | The *ISO 27001 view* sheet in `04-controls/vendor-questionnaire-and-control-map.xlsx` | 39 Annex A controls tested, each tied to control requirements, questions and expected evidence |
-| **IT risk and GRC** | What residual risk remains and how is it governed? | The *Risk register* and *Monitoring* sheets in `05-assessment/assessment-workbook.xlsx` | Two Very high and four High risks today. None above Medium after remediation. Thirteen key risk indicators and an annual reassessment |
+| **IT risk and GRC** | What residual risk remains and how is it governed? | The *Risk register* and *Monitoring* sheets in `05-assessment/assessment-workbook.xlsx` and the four-score risk register in `06-follow-up-assessment/follow-up-workbook.xlsx.` | Initial: two Very high and four High risks, none above Medium after remediation. Follow-up: High or above among the original 17 fell from 6 to 3, with 4 new risks. Thirteen key risk indicators and an annual reassessment |
 
 The ISO 27001 view is a coverage view of the controls this assessment tests. It is not a Statement of Applicability and not an ISMS implementation.
 
