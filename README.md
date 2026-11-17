@@ -14,7 +14,7 @@ A learning project in third-party risk management (TPRM). It follows one vendor 
 
 Every item carries an ID, so a reader can follow any thread from the architecture diagram to the decision (see `traceability-matrix.xlsx`).
 
-## The five stages
+## The five stages and a follow-up
 
 | Stage | Question it answers | Main deliverable |
 |---|---|---|
@@ -43,15 +43,18 @@ The ISO 27001 view is a coverage view of the controls this assessment tests. It 
 
 ## Headline results (simulated)
 
-| Item | Result |
-|---|---|
-| Classification | Critical or important function, Tier 1, treated as outsourcing as well as an ICT service |
-| Inherent risk | Very high (25 of 27) |
-| Questionnaire | 87 questions in 20 domains, 28 control requirements. 64 priority questions assessed: 24 Satisfactory, 32 Partial, 8 Gap |
-| Findings | 22: 5 High, 16 Medium, 1 Low |
-| Risks | 17 in the register. 2 Very high and 4 High today. No risk above Medium after the agreed remediation |
-| Decision | Conditional approval: close the High findings and the contract conditions before go-live, keep the AI assistant and virtual cards off until verified, and finish the Medium actions within 90 days |
-| Assessment dashboard | 05-assessment/dashboard.png |
+| Item | Initial assessment (4 Oct 2026) | Follow-up assessment (position at 4 Dec 2026) |
+|---|---|---|
+| Classification | Critical or important function, Tier 1, treated as outsourcing as well as an ICT service | Unchanged |
+| Inherent risk | Very high (25 of 27) | Unchanged |
+| Questions | 87 in 20 domains. 64 assessed: 24 Satisfactory, 32 Partial, 8 Gap | 65 new in 18 areas, 23 re-asked. 152 in total |
+| Control requirements | 28 | 33 |
+| Findings | 22: 5 High, 16 Medium, 1 Low | 33. Open: 22 (2 High, 13 Medium, 7 Low). 11 are new |
+| High findings open | 5 | 2: FND-05 (audit rights) and FND-23 (US backups, new) |
+| Risks | 17. 2 Very high and 4 High | 21 (4 new). Of the original 17, High or above fell from 6 to 3 |
+| ISO 27001 Annex A controls tested | 39 | 35, of which 10 are new. 49 combined |
+| Decision | Conditional approval: close the High findings and the contract conditions before go-live, keep the AI assistant and virtual cards off until verified, and finish the Medium actions within 90 days | Conditional approval kept. Go-live not yet cleared. 4 of 10 conditions met or met with residual |
+| Dashboard | `05-assessment/dashboard.png` | `06-follow-up-assessment/follow-up-dashboard.png` |
 
 ## Repository map
 
@@ -93,8 +96,8 @@ tprm-travel-saas-case-study/
 
 ## How to read it
 
-- **In 10 minutes:** this page, then `decision-memo.md`, then the first rows of `traceability-matrix.xlsx`.
-- **In 30 minutes:** the five stages in order, then the Findings and Risk register sheets.
+- **In 10 minutes:** this page, then `decision-memo.md`, `decision-memo-follow-up.md` then the first rows of `traceability-matrix.xlsx`.
+- **In 30 minutes:** the five stages, the follow-up folder in order, then the Findings and Risk register sheets.
 - **For the method:** follow thread T-01 in the traceability matrix from the architecture to the decision.
 
 ## What the case study demonstrates
