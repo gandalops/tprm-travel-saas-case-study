@@ -161,10 +161,6 @@ These come from the claims register. They are **hypotheses**, not findings.
 |---|---|---|
 | A12 | The vendor operates the connector, in a dedicated instance per client in the vendor's cloud. The vendor holds the credentials the bank supplies (read-only HR service account, approval endpoint access). The bank must allow connections from the vendor's cloud to its HR system. The vendor is assessed on its secrets handling, staff access and connector security | Case decision |
 
-## 12. Handoff
-
-**Traceability keys added in this stage:** V vendor claim, FP fourth party.
-
 ## Addendum: FP11 (added after Stage 5, change PF-1)
 
 FP11: AI model provider, US. Runs the chat assistant and itinerary suggestions. Data: D1, D4, and free text that may contain D9. Likely role: processor, to confirm. No contract with the bank. Not disclosed in the vendor's fourth-party list. See the Stage 5 assessment overview, section 4.
