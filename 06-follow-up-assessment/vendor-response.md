@@ -4,7 +4,7 @@
 
 > **Replies received:** 6 Nov 2026 (first) and 27 Nov 2026 (second evidence batch). **Evidence IDs:** EV-26 to EV-66.
 
-## 1. Cover note from the vendor (simulated)
+## 1. Cover note from the vendor (simulated, sent with the second evidence batch on 27 Nov 2026)
 
 > Thank you for the follow-up request. We have answered 63 of the 65 new questions and all 23 re-asked questions. Our architecture and security specification is attached. Where we cannot share a document (the full AI provider contract, the full penetration test report, source code), we have offered a summary or a supervised review. We have made several changes since your first assessment: privileged access is now just-in-time, break-glass credentials are vaulted, free text is redacted from logs, VIP profiles are masked for support staff, and the AI assistant is switched off for your tenant. We cannot agree unrestricted audit rights or a 24-hour incident notice, and we have made counter-proposals.
 
@@ -19,7 +19,7 @@
 
 A "full" reply can still be a Gap. The reply type says how complete the answer was, and the rating says what the bank thinks of it. Of the 65 new questions the bank rated 30 Satisfactory, 26 Partial, 7 Gap and 2 Not assessed (the two "no reply" items were low priority and were not chased).
 
-**Declined or withheld:** the full AI provider contract, the full penetration test report (summary and retest letter given), the software bill of materials (a top-20 library list given), unrestricted audit rights, 24-hour incident notice, mutual TLS, self-service credential revocation.
+**Declined or withheld:** the full AI provider contract, the full penetration test report (summary and retest letter given), the software bill of materials (a top-20 library list given), unrestricted audit rights, 24-hour incident notice, mutual TLS, self-service credential revocation. These items cut across several questions, so they do not equal the one "Declined" reply in the table above.
 
 ## 3. Replies on the open findings
 
@@ -50,7 +50,8 @@ A "full" reply can still be a Gap. The reply type says how complete the answer w
 
 ## 4. Physical architecture and security specification (vendor statements)
 
-The diagram is in `vendor-physical-architecture.png` (SVG alongside). Everything below is what the vendor **says**. It is unverified unless stated.
+The diagram is in `vendor-physical-architecture.png`. Everything below is what the vendor **says**. It is unverified unless stated. 
+The specification was first submitted on 6 Nov 2026 and updated with the second evidence batch on 27 Nov 2026.
 
 ### 4.1 Transport security and protocols
 
