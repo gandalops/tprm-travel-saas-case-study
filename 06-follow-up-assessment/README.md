@@ -2,7 +2,7 @@
 
 > **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts.
 >
->> **Builds on:** the initial assessment (folders 01 to 05, unchanged). **Position at:** 4 Dec 2026.
+> **Builds on:** the initial assessment (folders 01 to 05, unchanged). **Position at:** 4 Dec 2026.
 
 ## 1. What the follow-up assessment is
 
@@ -44,8 +44,7 @@ In a real programme the first assessment is not the end. The bank asks follow-up
 | Vendor replies to the 65 | 51 full, 11 partial, 1 declined, 2 no reply |
 | Rating of the answers | 30 Satisfactory, 26 Partial, 7 Gap, 2 not assessed |
 
-The areas follow a standard security control catalogue (access, data, cryptography, application, cloud, network, third parties, AI, vulnerabilities, monitoring, incidents, continuity, privacy, governance, change, people, infrastructure, physical). Questions were chosen to **close open findings first**, then to fill gaps, and the depth matches a Tier 1 vendor. Nine kinds of request were left out on purpose (see the end of this section).
-
+The areas follow a standard security control catalogue (access, data, cryptography, application, cloud, network, third parties, AI, vulnerabilities, monitoring, incidents, continuity, privacy, governance, change, people, infrastructure, physical). Questions were chosen to **close open findings first**, then to fill gaps, and the depth matches a Tier 1 vendor. Nine kinds of request were left out on purpose. The main ones are listed below, and all nine are in the workbook sheet *Not requested*.
 ### What the bank did itself, and what it chose not to ask
 
 Not everything needs the vendor. The bank ran ten outside-in checks from public information: sanctions and adverse media, TLS configuration, email security records, certificates, an external security rating, breach history, the company registry, the public subprocessor page, credit indicators and the security contact page. Two of them backed up findings: the public subprocessor page omits the AI provider (FND-04), and there is no security contact page (FND-33).
