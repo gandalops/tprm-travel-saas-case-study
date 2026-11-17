@@ -1,6 +1,6 @@
 # Guide to the IDs and abbreviations
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders, and all vendor data is simulated. This guide explains the short codes used in all five stages, so a reader can follow any item from the architecture to the decision.
+> **Fictional case study.** Example Bank and Vendor X are placeholders, and all vendor data is simulated. This guide explains the short codes used in all five stages and the follow-up assessment, so a reader can follow any item from the architecture to the decision.
 
 ## 1. The idea in 30 seconds
 
@@ -19,21 +19,22 @@ Every item in the case study has a short ID: a letter code and a number. The let
 | **A** | Assumption or decision | A1 to A16 | Stages 1 to 3 | A3: critical function |
 | **V** | Vendor claim | V1 to V13 | Stage 2 | V7: connector secrets are in a vault |
 | **FP** | Fourth party | FP1 to FP11 | Stage 2 | FP6: Card Provider Y |
-| **Z** | Trust zone | Z1 to Z5 | Stage 3 | Z3: vendor cloud |
+| **Z** | Trust zone | Z1 to Z4 | Stage 3 | Z3: vendor cloud |
 | **FW** | Firewall boundary | FW1 to FW3 | Stage 3 | FW1: bank edge |
-| **FS, FA, F1 to F12, FG, FN, FL, FH, FV, FI** | Data flow | see section 7 | Stage 3 | FA: nightly roster pull |
+| **FS, FA, F1 to F12, FG, FN, FL, FH, FV, FI** | Data flow | see section 5 | Stage 3 | FA: nightly roster pull |
 | **X** | Architecture observation | X1 to X12 | Stage 3 | X2: connector holds several credentials |
-| **CR** | Control requirement | CR-01 to CR-28 | Stage 4 | CR-03: credential storage |
+| **CR** | Control requirement | CR-01 to CR-33 | Stage 4 | CR-03: credential storage |
 | **A to W** (one letter and a number) | Question (domain letter and number) | 87 questions | Stage 4 | E3, O3 |
 | **Q-** | Question prefix in the traceability matrix | Q-E3 | Stages 4 and 5 | Q-O3 |
-| **EV** | Evidence item | EV-01 to EV-25 | Stage 5 | EV-06: secrets procedure and access list |
-| **FND** | Finding | FND-01 to FND-22 | Stage 5 | FND-01: wide access to credentials |
-| **RR** | Risk in the risk register | RR-01 to RR-17 | Stage 5 | RR-01: stolen connector credential |
-| **REM** | Remediation action | REM-01 to REM-22 | Stage 5 | REM-02: rotate credentials |
+| **EV** | Evidence item | EV-01 to EV-66 | Stage 5 | EV-06: secrets procedure and access list |
+| **FND** | Finding | FND-01 to FND-33 | Stage 5 | FND-01: wide access to credentials |
+| **RR** | Risk in the risk register | RR-01 to RR-21 | Stage 5 | RR-01: stolen connector credential |
+| **REM** | Remediation action | REM-01 to REM-33 | Stage 5 | REM-02: rotate credentials |
 | **KRI** | Key risk indicator | KRI-01 to KRI-13 | Stage 5 | KRI-01: days since rotation |
-| **T** | Traceability thread | T-01 to T-20 | Stage 5 | T-01: credential storage |
+| **T** | Traceability thread | T-01 to T-27 | Stage 5 | T-01: credential storage |
 | **PF** | Change after the freeze | PF-1 | Stage 5 | PF-1: the AI provider |
 | **EX** | Example row in the questionnaire | one row | Stage 4 | Row 6 |
+| **FU-, BA-, OS-** | Follow-up question, bank action, outside-in check | see section 12 | Follow-up assessment | FU-IAM-01 |
 
 **Watch out:** **R is regulation, not risk.** Risks use **RR**. The letters D, F and R are also used for questions or flows, so always read the code in context (see section 11).
 
@@ -266,6 +267,7 @@ In the traceability matrix, questions are written with the prefix **Q-** (for ex
 | ISO 27001 | International standard for information security management |
 | KRI | Key risk indicator |
 | MFA | Multi-factor authentication |
+| MSA | Master services agreement |
 | mTLS | Mutual TLS: both sides prove their identity |
 | NIS2 | EU Directive on network and information security |
 | OIDC, SAML | Protocols for single sign-on |
@@ -275,6 +277,7 @@ In the traceability matrix, questions are written with the prefix **Q-** (for ex
 | SCIM | System for cross-domain identity management (automatic account provisioning) |
 | SFTP | Secure file transfer protocol |
 | SIEM | Security information and event management |
+| SLA | Service level agreement |
 | SoA | Statement of Applicability (ISO 27001) |
 | SOC 2 | Service organisation control report |
 | SSO | Single sign-on |
@@ -310,3 +313,36 @@ Take **T-01** (the connector credentials):
 | **X** | X1 to X12 is an architecture observation |
 
 If an ID has a hyphen and three letters or more (CR-, FND-, RR-, REM-, KRI-, EV-), it is unambiguous. For short IDs, read them in context, or look for the **Q-** prefix on questions.
+
+## 12. Follow-up assessment codes
+
+The follow-up assessment keeps all the codes above and adds these.
+
+| Code | Meaning | Range |
+|---|---|---|
+| FU-AREA-NN | A new follow-up question. AREA is a three-letter area code. In the traceability matrix it is written Q-FU-AREA-NN | 65 questions, for example FU-IAM-01 |
+| CR-29 to CR-33 | Control requirements added in the follow-up | 5 |
+| EV-26 to EV-66 | Evidence items received in the follow-up | 41 |
+| FND-23 to FND-33 | New findings | 11 |
+| RR-18 to RR-21 | New risks | 4 |
+| REM-23 to REM-33 | New remediation actions | 11 |
+| T-21 to T-27 | New threads in traceability-matrix-follow-up.xlsx | 7 |
+| BA-01 to BA-13 | Bank action: something the bank must do itself | 13 |
+| OS-01 to OS-10 | Outside-in check: a check from public information | 10 |
+
+**Area codes for follow-up questions**
+
+| Code | Area | Code | Area |
+|---|---|---|---|
+| IAM | Identity and access management | INC | Incident response |
+| DAT | Data security | BCD | Business continuity and disaster recovery |
+| CRY | Cryptography and key management | PRV | Privacy |
+| APP | Application security | GRC | Governance, risk and compliance |
+| CLD | Cloud security | CHG | Change and configuration management |
+| NET | Network security | PPL | People security and endpoints |
+| TPR | Third-party risk | INF | Infrastructure security |
+| AIS | AI security | PHY | Physical security |
+| VUL | Vulnerability and security testing | | |
+| MON | Security monitoring | | |
+
+**Priority and reply type (follow-up only).** Priority: Must, Should, If applicable. Reply type: Full, Partial, Declined, No reply. A full reply can still be rated Gap.
