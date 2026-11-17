@@ -14,10 +14,10 @@ In a real programme the first assessment is not the end. The bank asks follow-up
 |---|---|
 | `bank-request.md` | The bank's request: evidence for the 22 open findings, the physical architecture request, 65 new questions in 18 areas, 23 re-asked questions |
 | `vendor-response.md` | The vendor's simulated reply, including its physical architecture and security specification |
-| `vendor-physical-architecture.png` and `.svg` | The vendor's submitted diagram, with the analyst's red annotations |
+| `vendor-physical-architecture.png` | The vendor's submitted diagram, with the analyst's red annotations |
 | `follow-up-workbook.xlsx` | Questions, replies, ratings, evidence, findings, four-score risk register, conditions, new actions, bank actions, regulatory map, ISO view |
 | `decision-memo-follow-up.md` | The updated decision |
-| `follow-up-dashboard.png` and `.svg` | One-page before and after view |
+| `follow-up-dashboard.png` | One-page before and after view |
 | `traceability-matrix-follow-up.xlsx` | The threads from the initial assessment plus follow-up columns and new threads |
 
 ## 3. Timeline (simulated)
@@ -160,7 +160,7 @@ Conditional approval is kept. Go-live on 1 Feb 2027 is **not yet cleared**, beca
 ## 10. What this shows about the analyst's work
 
 - Starts from the open findings and asks for evidence, not for everything.
-- Compares a claim with an artefact, and catches a contradiction (FND-23).
+- Compares a claim with an artefact, and records a contradiction (FND-23).
 - Rates evidence strength, and tells apart a verified fix, a promise and a refusal.
 - Accepts a compensating control only with a signed owner.
 - Keeps the baseline intact and records change with IDs and dates.
@@ -174,54 +174,3 @@ Conditional approval is kept. Go-live on 1 Feb 2027 is **not yet cleared**, beca
 - Dates after October 2026 are part of the simulation.
 - The new regulatory references are indicative. Check them against the official texts.
 
-
-## ============================================= left out on purpose==================================================================
-
-## 1. what the bank does itself
-
-**Outside-in checks** (no vendor effort needed):
-
-| ID | Check |
-|---|---|
-| OS-01 | Sanctions and adverse media screening of the legal entity and owners |
-| OS-02 | Public TLS configuration of the vendor's endpoints |
-| OS-03 | Email security records (SPF, DKIM, DMARC) |
-| OS-04 | Certificate and domain hygiene |
-| OS-05 | External security rating |
-| OS-06 | Public breach history, last three years |
-| OS-07 | Company registry: ownership and legal entity |
-| OS-08 | Public subprocessor page |
-| OS-09 | Credit and financial indicators |
-| OS-10 | Security contact page (security.txt) |
-
-**The bank's own actions** (customer-side controls the vendor assumes):
-
-| ID | Action | Owner |
-|---|---|---|
-| BA-01 | Call-back check for any change of the vendor's bank details | Bank Finance |
-| BA-02 | Conditional access and MFA policy for the platform application | Bank IT security |
-| BA-03 | Quarterly access review of bank-side booker accounts | Bank HR and IT |
-| BA-04 | Ingest vendor audit events into the bank's SIEM when streaming is available | Bank IT security |
-| BA-05 | Weekly review of the allowance rate-table change log | Bank Finance |
-| BA-06 | Runbook to disable the connector's service accounts at once | Bank IT security |
-| BA-07 | Register of information entry and criticality record | Bank Compliance |
-| BA-08 | Confirm whether the supervisor must be informed before signing | Bank Compliance |
-| BA-09 | Decision on a data protection impact assessment | Bank DPO |
-| BA-10 | Review the India transfer assessment | Bank DPO |
-| BA-11 | Assign the 14 SOC 2 customer controls to bank owners | Bank TPRM |
-| BA-12 | Fallback plan if the platform is unavailable (phone agent) | Bank HR |
-| BA-13 | Incident contact list agreed with the vendor | Bank TPRM |
-
-## 2. not requested, and why
-
-| Item | Reason |
-|---|---|
-| Source code review or access to repositories | The analyst asks for evidence, not code. Branch rules and scan summaries are enough |
-| Running scans or tests against the vendor | Not an analyst's job and not permitted without agreement. The penetration test letter covers it |
-| On-site visit to the cloud provider's data centres | Controls are inherited. The provider's assurance reports are requested instead |
-| Physical security details of every vendor site | Asked once for the India support site, as an if-applicable item |
-| Environmental, social and diversity reporting | No link to a risk in this case |
-| E-discovery and legal hold procedures | Not relevant to a travel platform. Data return is covered in the contract |
-| Container and Kubernetes configuration exports | Posture report and scan summaries are enough unless a finding points here |
-| Full application security standard verification | Out of proportion for an analyst. Scan, test and review evidence is requested instead |
-| Red team reports | Not expected from a vendor of this kind. Penetration test retest letter requested |
