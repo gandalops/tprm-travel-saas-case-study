@@ -91,6 +91,7 @@ tprm-travel-saas-case-study/
     ├── follow-up-workbook.xlsx       questions, ratings, findings, four-score risks
     ├── follow-up-dashboard.png       one-page before and after view
     ├── decision-memo-follow-up.md    the updated decision
+    ├── msa-outline.md                blank outline of a master services agreement
     └── traceability-matrix-follow-up.xlsx
 ```
 
