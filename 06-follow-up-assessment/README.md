@@ -17,6 +17,7 @@ In a real programme the first assessment is not the end. The bank asks follow-up
 | `vendor-physical-architecture.png` | The vendor's submitted diagram, with the analyst's red annotations |
 | `follow-up-workbook.xlsx` | Questions, replies, ratings, evidence, findings, four-score risk register, conditions, new actions, bank actions, regulatory map, ISO view |
 | `decision-memo-follow-up.md` | The updated decision |
+| `msa-outline.md` | Blank outline of a master services agreement (headings only) |
 | `follow-up-dashboard.png` | One-page before and after view |
 | `traceability-matrix-follow-up.xlsx` | The threads from the initial assessment plus follow-up columns and new threads |
 
