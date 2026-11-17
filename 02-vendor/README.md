@@ -132,7 +132,7 @@ A fourth party is a supplier of Vendor X that handles the bank's data or support
 
 The bank has **no direct contract** with FP1 to FP4 and FP6 to FP10, so it cannot audit or enforce controls there. Control comes through the vendor contract and the subprocessor list.
 
-## 9. Proposed answers to the open questions from Stage 1 (simulated)
+## 9. Questions settled in this stage (simulated)
 
 | Question | Proposed answer | Where it is tested next |
 |---|---|---|
