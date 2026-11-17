@@ -131,5 +131,5 @@ The same steps apply to every row in section 4.
 | A15 | The payment itself uses the bank's normal payment channels, outside the platform. F8 carries only the remittance advice | Assumption |
 | A16 | Users reach the vendor by browser with SSO. No VPN or private link is used | Assumption |
 
-Addendum : Two data flow diagrams (level 0 and level 1) show the same flows by process and data store: dfd-level-0.png and dfd-level-1.png
+Two data flow diagrams (level 0 and level 1) show the same flows by process and data store: dfd-level-0.png and dfd-level-1.png.
 
