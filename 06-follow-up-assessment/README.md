@@ -15,11 +15,13 @@ In a real programme the first assessment is not the end. The bank asks follow-up
 | `bank-request.md` | The bank's request: evidence for the 22 open findings, the physical architecture request, 65 new questions in 18 areas, 23 re-asked questions |
 | `vendor-response.md` | The vendor's simulated reply, including its physical architecture and security specification |
 | `vendor-physical-architecture.png` | The vendor's submitted diagram, with the analyst's red annotations |
-| `follow-up-workbook.xlsx` | Questions, replies, ratings, evidence, findings, four-score risk register, conditions, new actions, bank actions, regulatory map, ISO view |
+| `follow-up-workbook.xlsx` | Questions, replies, ratings, evidence, findings, four-score risk register, conditions, new actions, bank actions, regulatory map, ISO view, SLA tracking and an offboarding checklist |
 | `decision-memo-follow-up.md` | The updated decision |
 | `msa-outline.md` | Blank outline of a master services agreement (headings only) |
 | `follow-up-dashboard.png` | One-page before and after view |
 | `traceability-matrix-follow-up.xlsx` | The threads from the initial assessment plus follow-up columns and new threads |
+| `contract-checklist.xlsx` | The contract terms the bank needs (DORA Art 30, GDPR Art 28, liability), with the status of each |
+| `exit-plan.md` | The bank-side exit plan: triggers, exit steps, roles, exit test and open topics |
 
 ## 3. Timeline (simulated)
 
