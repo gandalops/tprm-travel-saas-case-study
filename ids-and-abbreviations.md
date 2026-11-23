@@ -329,6 +329,10 @@ The follow-up assessment keeps all the codes above and adds these.
 | T-21 to T-27 | New threads in traceability-matrix-follow-up.xlsx | 7 |
 | BA-01 to BA-13 | Bank action: something the bank must do itself | 13 |
 | OS-01 to OS-10 | Outside-in check: a check from public information | 10 |
+| CC-01 to CC-24 | Contract checklist row: one contract term and its status (contract-checklist.xlsx) | 24 |
+| EX-01 to EX-33 | Exit plan item: a trigger (EX-01 to EX-07) or an exit step (EX-10 to EX-33) in exit-plan.md | 7 triggers, 14 steps |
+| SLA-01 to SLA-11 | Service level metric to monitor, in the SLA tracking sheet | 11 |
+| OFF-01 to OFF-17 | Offboarding checklist step, in the Offboarding sheet | 17 |
 
 **Area codes for follow-up questions**
 
