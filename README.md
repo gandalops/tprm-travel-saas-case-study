@@ -35,9 +35,9 @@ Arrows point from the system that opens the connection to the system that receiv
 
 | Perspective | Question | Where to look | Answer in this case |
 |---|---|---|---|
-| **TPRM** | Should we onboard this vendor? | `05-assessment/decision-memo.md` and `06-follow-up-assessment/decision-memo-follow-up.md` | Conditional approval. Not approved until the pre-go-live conditions are verified After the follow-up: kept, and go-live not yet cleared|
+| **TPRM** | Should we onboard this vendor? | `05-assessment/decision-memo.md` and `06-follow-up-assessment/decision-memo-follow-up.md` | Conditional approval. Not approved until the pre-go-live conditions are verified After the follow-up: kept, and go-live not yet cleared |
 | **ISO 27001** | Which controls apply and what evidence do we expect? | The *ISO 27001 view* sheet in `04-controls/vendor-questionnaire-and-control-map.xlsx` | 39 Annex A controls tested, each tied to control requirements, questions and expected evidence |
-| **IT risk and GRC** | What residual risk remains and how is it governed? | The *Risk register* and *Monitoring* sheets in `05-assessment/assessment-workbook.xlsx` and the four-score risk register in `06-follow-up-assessment/follow-up-workbook.xlsx.` | Initial: two Very high and four High risks, none above Medium after remediation. Follow-up: High or above among the original 17 fell from 6 to 3, with 4 new risks. Thirteen key risk indicators and an annual reassessment |
+| **IT risk and GRC** | What residual risk remains and how is it governed? | The *Risk register* and *Monitoring* sheets in `05-assessment/assessment-workbook.xlsx` and the four-score risk register in `06-follow-up-assessment/follow-up-workbook.xlsx` | Initial: two Very high and four High risks, none above Medium after remediation. Follow-up: High or above among the original 17 fell from 6 to 3, with 4 new risks. Thirteen key risk indicators and an annual reassessment |
 
 The ISO 27001 view is a coverage view of the controls this assessment tests. It is not a Statement of Applicability and not an ISMS implementation.
 
@@ -88,16 +88,18 @@ tprm-travel-saas-case-study/
     ├── bank-request.md               the bank's follow-up questions
     ├── vendor-response.md            the vendor's simulated reply
     ├── vendor-physical-architecture.png
-    ├── follow-up-workbook.xlsx       questions, ratings, findings, four-score risks
+    ├── follow-up-workbook.xlsx       questions, ratings, findings, four-score risks, SLA tracking, offboarding checklist
     ├── follow-up-dashboard.png       one-page before and after view
     ├── decision-memo-follow-up.md    the updated decision
+    ├── contract-checklist.xlsx       contract terms (DORA Art 30, GDPR Art 28) and their status
+    ├── exit-plan.md                  bank-side exit plan: triggers, steps, roles, exit test
     ├── msa-outline.md                blank outline of a master services agreement
     └── traceability-matrix-follow-up.xlsx
 ```
 
 ## How to read it
 
-- **In 10 minutes:** this page, then `decision-memo.md`, `decision-memo-follow-up.md` then the first rows of `traceability-matrix.xlsx`.
+- **In 10 minutes:** this page, then `decision-memo.md`, and `decision-memo-follow-up.md` then the first rows of `traceability-matrix.xlsx`.
 - **In 30 minutes:** the five stages, the follow-up folder in order, then the Findings and Risk register sheets.
 - **For the method:** follow thread T-01 in the traceability matrix from the architecture to the decision.
 
