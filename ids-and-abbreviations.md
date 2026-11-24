@@ -1,10 +1,10 @@
 # Guide to the IDs and abbreviations
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders, and all vendor data is simulated. This guide explains the short codes used in all five stages and the follow-up assessment, so a reader can follow any item from the architecture to the decision.
+> This guide explains the short codes used in all five stages and the follow-up assessment, so a reader can follow any item from the architecture to the decision.
 
 ## 1. The idea in 30 seconds
 
-Every item in the case study has a short ID: a letter code and a number. The letter says what kind of item it is, and the number says which one. For example, **V7** is vendor claim 7, **X2** is architecture observation 2, **CR-03** is control requirement 3, and **FND-01** is finding 1. Because the IDs repeat from stage to stage, you can follow one thread end to end:
+Every item has a short ID: a letter code and a number. The letter says what kind of item it is, and the number says which one. For example, **V7** is vendor claim 7, **X2** is architecture observation 2, **CR-03** is control requirement 3, and **FND-01** is finding 1. Because the IDs repeat from stage to stage, you can follow one thread end to end:
 
 **Flow, observation or claim, risk, control, framework reference, question, vendor answer, finding, decision.**
 
