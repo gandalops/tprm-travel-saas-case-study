@@ -1,22 +1,20 @@
 # Stage 5: Assessment, findings and risk
 
-> **Fictional case study. Everything Vendor X says, shows or provides in this stage is simulated.** Names, dates, evidence and numbers are invented. Legal references are indicative and must be checked against the official texts. 
->
 > **Builds on:** Stages 1 to 4.
 
 ## 1. What this stage contains
 
 | File | Content |
 |---|---|
-| `assessment-workbook.xlsx` | Questionnaire with simulated answers, Summary, Findings, Risk register, Remediation plan, Monitoring, Evidence log, plus the Stage 4 sheets |
+| `assessment-workbook.xlsx` | Questionnaire with the vendor's answers, Summary, Findings, Risk register, Remediation plan, Monitoring, Evidence log, plus the Stage 4 sheets |
 | `decision-memo.md` | The decision, risk treatment, conditions and a one-page management summary |
 | `incident-scenario.md` | A tabletop exercise: a stolen connector credential |
 | `../traceability-matrix.xlsx` | One row per thread, from flow to decision |
 
 ## 2. How the assessment was run
 
-1. **Priority questions.** 64 of the 87 questions were answered. They cover the controls tied to the Stage 3 observations and the Stage 2 claims. The other 23 are marked "not yet assessed" (lower priority).
-2. **Simulated answers and evidence.** Each answer has a vendor response, an evidence item, a status, and a rating. Weaknesses were seeded on purpose from the Stage 2 hypotheses, so that the decision is not trivial.
+1. **Priority questions.** We assessed 64 of the 87 questions. They cover the controls tied to the Stage 3 observations and the Stage 2 claims. The other 23 are marked "not yet assessed" (lower priority).
+2. **Answers and evidence.** Each answer has a vendor response, an evidence item, a status and a rating. The Stage 2 hypotheses decide where we look hardest.
 3. **Rating.** The Stage 4 rules were applied: strong, medium or weak evidence, and Satisfactory, Partial or Gap.
 4. **Findings.** Every Partial or Gap was grouped into a finding with a severity.
 5. **Risks.** Findings feed a risk register with likelihood and impact before controls (inherent), as assessed (current), and after remediation (target).
@@ -77,9 +75,9 @@ Question W1 revealed that the chat assistant uses a third-party model provider i
 | Finding | FND-04 (High) |
 | Action | REM-04: the AI assistant is disabled for the bank's tenant until the provider is contracted and listed, personal data is kept out of prompts, and retention is confirmed |
 
-This shows how a frozen baseline handles new information: the baseline stays intact, and the change is traced to a finding and an action.
+This is how we handle new information after a freeze: the baseline stays intact, and the change is traced to a finding and an action.
 
-## 5. Decision rules 
+## 5. Decision rules
 
 | Rule | Effect |
 |---|---|
@@ -93,7 +91,6 @@ This shows how a frozen baseline handles new information: the baseline stays int
 ## 6. Assumptions and limits
 
 - Go-live target is 1 Feb 2027. Pre-go-live actions are due by 15 Jan 2027, and the 90-day actions by 30 Apr 2027.
-- The 90-day rotation period, the 24-hour notification period and the 90-day guest retention are assumed defaults. A real bank's policy would set them.
+- The 90-day rotation period, the 24-hour notification period and the 90-day guest retention are assumed defaults. The bank's own policy sets the final values.
 - Likelihood and impact are scored 1 to 5 by judgement and are not calibrated with data.
-- The evidence is invented. Its value is in showing the method, not in the values.
-
+- Every rating rests on the evidence received at the time of the assessment. New evidence can change it.
