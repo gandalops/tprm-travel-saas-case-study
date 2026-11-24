@@ -34,7 +34,7 @@ Every item in the case study has a short ID: a letter code and a number. The let
 | **T** | Traceability thread | T-01 to T-27 | Stage 5 | T-01: credential storage |
 | **PF** | Change after the freeze | PF-1 | Stage 5 | PF-1: the AI provider |
 | **EX** | Example row in the questionnaire | one row | Stage 4 | Row 6 |
-| **FU-, BA-, OS-** | Follow-up question, bank action, outside-in check | see section 12 | Follow-up assessment | FU-IAM-01 |
+| **FU-, BA-, OS-, CC-, EX-, SLA-, OFF-** | Follow-up question, bank action, outside-in check, contract term, exit plan item, service level metric, offboarding step | see section 12 | Follow-up assessment | FU-IAM-01, EX-10 |
 
 **Watch out:** **R is regulation, not risk.** Risks use **RR**. The letters D, F and R are also used for questions or flows, so always read the code in context (see section 11).
 
@@ -311,6 +311,7 @@ Take **T-01** (the connector credentials):
 | **A** | A1 to A16 is an assumption. A1 to A3 as a question is the scope domain |
 | **S** | S1 to S12 is a scope item |
 | **X** | X1 to X12 is an architecture observation |
+| **EX** | EX with no number is the example row in the questionnaire (Stage 4). EX-01 to EX-33 is an exit plan item (follow-up assessment) |
 
 If an ID has a hyphen and three letters or more (CR-, FND-, RR-, REM-, KRI-, EV-), it is unambiguous. For short IDs, read them in context, or look for the **Q-** prefix on questions.
 
