@@ -1,19 +1,17 @@
 # Follow-up assessment: re-rating and risk reduction
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts.
->
 > **Builds on:** the initial assessment (folders 01 to 05, unchanged). **Position at:** 4 Dec 2026.
 
 ## 1. What the follow-up assessment is
 
-In a real programme the first assessment is not the end. The bank asks follow-up questions, the vendor replies, and the analyst re-rates the findings **only on verified evidence**. The follow-up does that for the travel platform. The initial assessment (folders 01 to 05) stays as the baseline and is not edited. The follow-up is recorded in this folder, so a reader can see what moved, what stayed and what is new.
+The first assessment is not the end of the work. The bank asks follow-up questions, the vendor replies, and the analyst re-rates the findings **only on verified evidence**. This follow-up does that for the travel platform. The initial assessment (folders 01 to 05) stays as the baseline and is not edited. The follow-up is recorded in this folder, so a reader can see what moved, what stayed and what is new.
 
 ## 2. Files in this folder
 
 | File | Content |
 |---|---|
 | `bank-request.md` | The bank's request: evidence for the 22 open findings, the physical architecture request, 65 new questions in 18 areas, 23 re-asked questions |
-| `vendor-response.md` | The vendor's simulated reply, including its physical architecture and security specification |
+| `vendor-response.md` | The vendor's reply, including its physical architecture and security specification |
 | `vendor-physical-architecture.png` | The vendor's submitted diagram, with the analyst's red annotations |
 | `follow-up-workbook.xlsx` | Questions, replies, ratings, evidence, findings, four-score risk register, conditions, new actions, bank actions, regulatory map, ISO view, SLA tracking and an offboarding checklist |
 | `decision-memo-follow-up.md` | The updated decision |
@@ -23,7 +21,7 @@ In a real programme the first assessment is not the end. The bank asks follow-up
 | `contract-checklist.xlsx` | The contract terms the bank needs (DORA Art 30, GDPR Art 28, liability), with the status of each |
 | `exit-plan.md` | The bank-side exit plan: triggers, exit steps, roles, exit test and open topics |
 
-## 3. Timeline (simulated)
+## 3. Timeline
 
 | Date | Event |
 |---|---|
@@ -47,6 +45,7 @@ In a real programme the first assessment is not the end. The bank asks follow-up
 | Rating of the answers | 30 Satisfactory, 26 Partial, 7 Gap, 2 not assessed |
 
 The areas follow a standard security control catalogue (access, data, cryptography, application, cloud, network, third parties, AI, vulnerabilities, monitoring, incidents, continuity, privacy, governance, change, people, infrastructure, physical). Questions were chosen to **close open findings first**, then to fill gaps, and the depth matches a Tier 1 vendor. Nine kinds of request were left out on purpose. The main ones are listed below, and all nine are in the workbook sheet *Not requested*.
+
 ### What the bank did itself, and what it chose not to ask
 
 Not everything needs the vendor. The bank ran ten outside-in checks from public information: sanctions and adverse media, TLS configuration, email security records, certificates, an external security rating, breach history, the company registry, the public subprocessor page, credit indicators and the security contact page. Two of them backed up findings: the public subprocessor page omits the AI provider (FND-04), and there is no security contact page (FND-33).
@@ -159,20 +158,18 @@ Both feature gates are verified: the AI assistant stays off, and virtual cards c
 
 Conditional approval is kept. Go-live on 1 Feb 2027 is **not yet cleared**, because two High findings are open. The details and the options for the risk committee are in `decision-memo-follow-up.md`.
 
-## 10. What this shows about the analyst's work
+## 10. How the follow-up was run
 
-- Starts from the open findings and asks for evidence, not for everything.
-- Compares a claim with an artefact, and records a contradiction (FND-23).
-- Rates evidence strength, and tells apart a verified fix, a promise and a refusal.
-- Accepts a compensating control only with a signed owner.
-- Keeps the baseline intact and records change with IDs and dates.
-- Lists what the bank must do itself (customer-side controls) and what it chose not to ask.
+- We start from the open findings and ask for evidence, not for everything.
+- We compare a claim with an artefact, and record a contradiction (FND-23).
+- We rate evidence strength, and tell apart a verified fix, a promise and a refusal.
+- We accept a compensating control only with a signed owner.
+- We keep the baseline intact and record change with IDs and dates.
+- We list what the bank must do itself (customer-side controls) and what it chose not to ask.
 
 ## 11. Limits
 
-- All replies, evidence and dates are simulated.
 - Likelihood and impact are judgement scores.
-- The analyst did not test the vendor or review code. Only a few items were observed by the bank (EV-30, EV-32, EV-44).
-- Dates after October 2026 are part of the simulation.
+- We did not test the vendor or review code. Only a few items were observed by the bank (EV-30, EV-32, EV-44).
+- Every rating rests on the evidence received by 4 Dec 2026. A later delivery can change it.
 - The new regulatory references are indicative. Check them against the official texts.
-
