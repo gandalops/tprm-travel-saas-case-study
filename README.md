@@ -4,9 +4,12 @@
 
 ## What this is
 
-A learning project in third-party risk management (TPRM). It follows one vendor through the whole onboarding workflow, from the business reason to a risk decision, and shows how each step connects to the next.
+- A learning project in third-party risk management (TPRM).
+- It follows one vendor through the whole onboarding workflow, from the business reason to a risk decision, and shows how each step connects to the next.
 
-**The scenario:** Example Bank, an EU-headquartered bank with operations in Asia, wider EMEA, and the US and Mexico, wants to use Vendor X, a corporate travel management platform delivered as SaaS. The platform connects to the bank's HR system, identity provider, finance system and group insurer. It handles passport data, executive itineraries, daily allowances, virtual cards and guest bookings.
+**The scenario:** 
+- Example Bank, an EU-headquartered bank with operations in Asia, wider EMEA, and the US and Mexico, wants to use Vendor X, a corporate travel management platform delivered as SaaS.
+- The platform connects to the bank's HR system, identity provider, finance system and group insurer. It handles passport data, executive itineraries, daily allowances, virtual cards and guest bookings.
 
 ## The method in one line
 
@@ -31,17 +34,17 @@ Every item carries an ID, so a reader can follow any thread from the architectur
 
 Arrows point from the system that opens the connection to the system that receives it. Four connections open into the bank, all from the vendor cloud, and the invoice path bypasses the connector. These two facts drove many of the questions in Stage 4.
 
-## Three ways to read the same case
+## Three ways to read the same assessment
 
-| Perspective | Question | Where to look | Answer in this case |
+| Perspective | Question | Where to look | Answer |
 |---|---|---|---|
-| **TPRM** | Should we onboard this vendor? | `05-assessment/decision-memo.md` and `06-follow-up-assessment/decision-memo-follow-up.md` | Conditional approval. Not approved until the pre-go-live conditions are verified After the follow-up: kept, and go-live not yet cleared |
+| **TPRM** | Should we onboard this vendor? | `05-assessment/decision-memo.md` and `06-follow-up-assessment/decision-memo-follow-up.md` | Conditional approval. Not approved until the pre-go-live conditions are verified. After the follow-up: kept, and go-live not yet cleared |
 | **ISO 27001** | Which controls apply and what evidence do we expect? | The *ISO 27001 view* sheet in `04-controls/vendor-questionnaire-and-control-map.xlsx` | 39 Annex A controls tested, each tied to control requirements, questions and expected evidence |
 | **IT risk and GRC** | What residual risk remains and how is it governed? | The *Risk register* and *Monitoring* sheets in `05-assessment/assessment-workbook.xlsx` and the four-score risk register in `06-follow-up-assessment/follow-up-workbook.xlsx` | Initial: two Very high and four High risks, none above Medium after remediation. Follow-up: High or above among the original 17 fell from 6 to 3, with 4 new risks. Thirteen key risk indicators and an annual reassessment |
 
 The ISO 27001 view is a coverage view of the controls this assessment tests. It is not a Statement of Applicability and not an ISMS implementation.
 
-## Headline results (simulated)
+## Headline results
 
 | Item | Initial assessment (4 Oct 2026) | Follow-up assessment (position at 4 Dec 2026) |
 |---|---|---|
@@ -87,7 +90,7 @@ tprm-travel-saas-case-study/
 └── 06-follow-up-assessment/
     ├── README.md                     follow-up assessment: overview and results
     ├── bank-request.md               the bank's follow-up questions
-    ├── vendor-response.md            the vendor's simulated reply
+    ├── vendor-response.md            the vendor's reply
     ├── vendor-physical-architecture.png
     ├── follow-up-workbook.xlsx       questions, ratings, findings, four-score risks, SLA tracking, offboarding checklist
     ├── follow-up-dashboard.png       one-page before and after view
@@ -101,11 +104,11 @@ tprm-travel-saas-case-study/
 ## How to read it
 
 - **Start here, for the business owner view:** `business-owner-report.md`.
-- **In 10 minutes:** this page, then `decision-memo.md`, and `decision-memo-follow-up.md` then the first rows of `traceability-matrix.xlsx`.
+- **In 10 minutes:** this page, then `decision-memo.md` and `decision-memo-follow-up.md`, then the first rows of `traceability-matrix.xlsx`.
 - **In 30 minutes:** the five stages, the follow-up folder in order, then the Findings and Risk register sheets.
 - **For the method:** follow thread T-01 in the traceability matrix from the architecture to the decision.
 
-## What the case study demonstrates
+## What the work demonstrates
 
 1. **Scoping before questions.** Inherent risk, criticality and applicable rules decide how deep the assessment goes.
 2. **Claims are not evidence.** Each vendor statement is a claim until evidence is seen, and evidence is rated by strength.
@@ -133,5 +136,4 @@ Corrections and comments are welcome, especially from TPRM, compliance and secur
 Content is released under CC BY 4.0. You may share and adapt it with attribution. See `LICENSE`.
 
 ## Author
-Yogesh Gandal 
-
+Yogesh Gandal
