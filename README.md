@@ -61,6 +61,7 @@ The ISO 27001 view is a coverage view of the controls this assessment tests. It 
 ```
 tprm-travel-saas-case-study/
 ├── README.md
+├── business-owner-report.md          the assessment story and recommendation, for a business owner
 ├── LICENSE
 ├── ids-and-abbreviations.md          meaning of every ID and abbreviation
 ├── traceability-matrix.xlsx          flow to decision, one row per thread
@@ -99,6 +100,7 @@ tprm-travel-saas-case-study/
 
 ## How to read it
 
+- **Start here, for the business owner view:** `business-owner-report.md`.
 - **In 10 minutes:** this page, then `decision-memo.md`, and `decision-memo-follow-up.md` then the first rows of `traceability-matrix.xlsx`.
 - **In 30 minutes:** the five stages, the follow-up folder in order, then the Findings and Risk register sheets.
 - **For the method:** follow thread T-01 in the traceability matrix from the architecture to the decision.
