@@ -1,12 +1,10 @@
 # Stage 4: Control requirements and questionnaire
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. Legal and standard references are indicative and must be checked against the official texts. 
->
 > **Builds on:** Stages 1 to 3 (scope and data, vendor claims and fourth parties, flows and observations X1 to X12).
 
 ## 1. Purpose and method
 
-Turn what we learned in Stages 1 to 3 into **control requirements**, then map each requirement to the frameworks and to questions the vendor must answer. The order matters: **controls come from risks, and the frameworks come second.**
+This stage turns what we learned in Stages 1 to 3 into **control requirements**, then maps each requirement to the frameworks and to questions the vendor must answer. The order matters: **controls come from risks, and the frameworks come second.**
 
 The chain used throughout:
 
@@ -67,7 +65,7 @@ Worked example:
 
 ## 4. Framework mapping
 
-References are at article or control level. DORA is Regulation (EU) 2022/2554. GDPR is Regulation (EU) 2016/679. ISO is ISO/IEC 27001:2022 Annex A. The Other column uses the Stage 1 regulation IDs.
+References are at article or control level and are indicative. We check them against the official texts before anyone relies on them. DORA is Regulation (EU) 2022/2554. GDPR is Regulation (EU) 2016/679. ISO is ISO/IEC 27001:2022 Annex A. The Other column uses the Stage 1 regulation IDs.
 
 | ID | Tier | DORA | GDPR | ISO 27001:2022 Annex A | Other |
 |---|---|---|---|---|---|
@@ -138,7 +136,7 @@ References are at article or control level. DORA is Regulation (EU) 2022/2554. G
 | V12 Tenant separation | CR-26 |
 | V13 AI features | CR-28 |
 
-Every question is linked to at least one control requirement, and every flow in the Stage 3 table appears in at least one question. Both checks were run when the workbook was built.
+Every question is linked to at least one control requirement, and every flow in the Stage 3 table appears in at least one question. We ran both checks when we built the workbook.
 
 ## 6. Evidence strength and rating rules (used in Stage 5)
 
@@ -164,6 +162,8 @@ Every question is linked to at least one control requirement, and every flow in 
 | Low | Documentation or minor |
 
 The decision rules built on these ratings are set in Stage 5.
+
+**Analyst's note.** Evidence strength decides the rating, not how confident the vendor sounds. A policy without proof is Partial at best, and a claim contradicted by evidence is a Gap. We record the evidence ID next to every rating, so a reviewer can trace the rating back to the document.
 
 ## 7. What is deeper because the service is Tier 1
 
