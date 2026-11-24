@@ -1,12 +1,10 @@
 # Stage 3: Architecture and data flows
 
-> **Fictional case study.** Example Bank, Vendor X and all flows are simulated. Protocols and ports are assumptions (typical defaults) and must be checked against a real integration specification.
->
 > **Builds on:** Stage 1 (scope, data, process steps) and Stage 2 (vendor claims, fourth parties, and decision A12: the vendor operates the connector).
 
 ## 1. Purpose of this stage
 
-Show how the two parties connect in practice, so that the questions in Stage 4 come from the architecture and not from a generic checklist. For every flow we record who opens the connection, which boundary it crosses, which data moves, and what could go wrong.
+This stage maps how the bank and Vendor X connect in practice, so that the questions in Stage 4 come from the architecture and not from a generic checklist. For every flow we record who opens the connection, which boundary it crosses, which data moves, and what could go wrong.
 
 ## 2. Trust zones and boundaries
 
@@ -35,7 +33,7 @@ An editable vector version is in `network-architecture.svg`.
 
 ## 4. Data-flow table
 
-All connections are assumed to use HTTPS (TLS) with token-based authentication unless stated.
+All connections are assumed to use HTTPS (TLS) with token-based authentication unless stated. Protocols are typical defaults. We confirm them against the integration specification before the bank relies on them.
 
 | ID | Step | From to | Data | Protocol (assumed) | Opened by | Boundaries crossed | Main exposure |
 |---|---|---|---|---|---|---|---|
@@ -71,6 +69,8 @@ All connections are assumed to use HTTPS (TLS) with token-based authentication u
 | FW3 | F5a to F5d, F9, F12, FN, FL, FH | **The bank has no technical control and no contract with most of these parties** |
 | Bypass of the connector | F7, F8, FS, FG, F10 | Connector controls (read-only account, token, fixed address) do not cover these. The invoice path needs its own review |
 | Crosses the EU border | FV, FN, FL, parts of F5 | Transfer rules apply |
+
+**Analyst's note.** The bank owns FW1 and can set the rules itself: fixed source addresses, read-only accounts, mutual TLS. It cannot see inside FW2 or FW3. So for the four inbound openings we ask for controls the bank can enforce, and for FW3 we rely on the contract, the subprocessor list and evidence from the vendor.
 
 ## 6. Where each data type goes
 
@@ -124,12 +124,13 @@ The same steps apply to every row in section 4.
 
 ## 9. Assumptions made in this stage
 
-| ID | Assumption | Basis |
+These are working assumptions. We confirm each one in the integration design before relying on it.
+
+| ID | Assumption | To confirm |
 |---|---|---|
-| A13 | Finance admins maintain the allowance rate table in the vendor console (F10) | Assumption |
-| A14 | The vendor pushes invoices to an intake endpoint of the ERP (F7) | Assumption |
-| A15 | The payment itself uses the bank's normal payment channels, outside the platform. F8 carries only the remittance advice | Assumption |
-| A16 | Users reach the vendor by browser with SSO. No VPN or private link is used | Assumption |
+| A13 | Finance admins maintain the allowance rate table in the vendor console (F10) | Who may edit the rate table and how changes are approved |
+| A14 | The vendor pushes invoices to an intake endpoint of the ERP (F7) | Delivery method and endpoint in the integration specification |
+| A15 | The payment itself uses the bank's normal payment channels, outside the platform. F8 carries only the remittance advice | Payment channel, with bank treasury and finance |
+| A16 | Users reach the vendor by browser with SSO. No VPN or private link is used | Network access model in the integration specification |
 
 Two data flow diagrams (level 0 and level 1) show the same flows by process and data store: dfd-level-0.png and dfd-level-1.png.
-
