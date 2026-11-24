@@ -1,10 +1,8 @@
 # Stage 1: Business process, scoping and inherent risk
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All figures are assumptions made for this exercise. Legal references are indicative and must be checked against the official texts.
-
 ## 1. Why this service exists
 
-Example Bank is headquartered in the EU, operates in several EU member states and in other regions (Asia, wider EMEA, and the US and Mexico), and has about 20,000 employees (assumption). Today employees book travel by email and spreadsheet, which is slow and hard to control. Vendor X is a corporate travel management platform delivered as SaaS. It would:
+HR asked us to onboard a corporate travel management platform. Example Bank is headquartered in the EU, operates in several EU member states and in other regions (Asia, wider EMEA, and the US and Mexico), and has about 20,000 employees (assumption). Today employees book travel by email and spreadsheet, which is slow and hard to control. Vendor X is the platform under review, delivered as SaaS. It would:
 
 - enforce the bank's travel policy by employee grade
 - connect to the HR system so that only current employees can book
@@ -26,7 +24,9 @@ Example Bank is headquartered in the EU, operates in several EU member states an
 | IT and Security | Identity, connector, integration | Technical controls |
 | Privacy (DPO) | Lawful basis, transfers, DPIA | Employee, guest and recipient data |
 | Compliance | Gifts and hospitality, sanctions, regulatory classification | Policy compliance |
-| TPRM | Runs the assessment and risk decision | This case study |
+| TPRM | Runs the assessment and recommends the risk decision | Coordinates the input of the other teams |
+
+TPRM coordinates the assessment. Each specialist team reviews the vendor's answers in its own area, and we bring their input together in the recommendation.
 
 ## 2. Scope
 
@@ -184,11 +184,13 @@ Inherent risk means the risk before any vendor controls are considered. Each fac
 **Bands:** 9 to 13 low, 14 to 18 medium, 19 to 23 high, 24 to 27 very high.
 **Result: very high inherent risk.**
 
+> **Analyst's note.** Inherent risk is the first question we ask: how bad could this get if the vendor had no controls at all? We score it before reading any vendor answer, so a good sales deck cannot lower our starting point. Eight of the nine factors score 3. Only substitutability scores 1, because many travel platforms exist and leaving later is possible. The 25 of 27 does not say the vendor is weak. It tells us how deeply to look, and it sets the tier. The decision comes at the end, when we compare what the vendor does with what the bank needs. The scoring is deliberately simple and unweighted.
+
 ## 6. Criticality classification
 
 Question: would a disruption seriously impair the bank's financial performance, soundness, continuity of services, regulatory compliance, **or reputation**?
 
-DORA's own definition of a critical or important function (Art 3(22)) refers to financial performance, soundness, continuity and compliance. Reputational damage is not named there. Banks normally include it in their **internal** impact criteria, so this case study records it as an internal criterion.
+DORA's own definition of a critical or important function (Art 3(22)) refers to financial performance, soundness, continuity and compliance. Reputational damage is not named there. Banks normally include it in their **internal** impact criteria, so we record it as an internal criterion.
 
 | Test | Answer | Reasoning |
 |---|---|---|
@@ -198,9 +200,9 @@ DORA's own definition of a critical or important function (Art 3(22)) refers to 
 | Reputational damage from a failure or breach | **Yes** | Executive itineraries and passport data of a global workforce |
 | Scale and spread | Yes | Several regions, large workforce |
 
-**Decision : classified as a critical or important function.**
+**Decision: classified as a critical or important function.**
 
-Note for interviews: many banks would class a plain travel booking tool as non-critical. This case study chooses critical because of the duty of care, reputational impact and global scale, and it states that reasoning openly. In a real bank, the business and compliance teams decide.
+> **Analyst's note.** Many banks would class a plain travel booking tool as non-critical. We chose critical because of the duty of care to travellers, the reputational impact and the global scale, and we state that reasoning openly. The final classification belongs to the business and to Compliance.
 
 ## 7. Applicable regulations and what the bank requires from the vendor
 
@@ -224,7 +226,7 @@ The bank is the regulated party. It assesses the vendor to meet its own obligati
 
 **Group view:** DORA applies to the EU financial entities. Non-EU branches and subsidiaries may fall under local regulators. The bank may need one group assessment plus local addenda.
 
-## 8. Assumption A2 and A8, explained
+## 8. Why the platform is both an ICT service and outsourcing (A2 and A8)
 
 Two different questions are asked about the same vendor:
 
@@ -265,13 +267,13 @@ Focus areas for later stages:
 
 | ID | Decision | Basis |
 |---|---|---|
-| A1 | Bank is EU-headquartered with operations in the EU, Asia, wider EMEA, and the US and Mexico. About 20,000 employees | Case decision (size is an assumption) |
-| A2 | The platform is an ICT service under DORA | Case decision, see section 8 |
-| A3 | Classified as a critical or important function | Case decision |
+| A1 | Bank is EU-headquartered with operations in the EU, Asia, wider EMEA, and the US and Mexico. About 20,000 employees | Decision (the size is an assumption) |
+| A2 | The platform is an ICT service under DORA | Decision, see section 8 |
+| A3 | Classified as a critical or important function | Decision |
 | A4 | Tier 1 | Follows from A3 |
-| A5 | Gifts, flowers and awards are in scope as miscellaneous business expenses, with controls | Case decision |
-| A6 | Guests are in scope. The guest has no access. A bank employee books on the guest's behalf | Case decision |
-| A7 | Virtual cards and loyalty or frequent flyer programmes are in scope. PCI DSS applies | Case decision |
+| A5 | Gifts, flowers and awards are in scope as miscellaneous business expenses, with controls | Decision |
+| A6 | Guests are in scope. The guest has no access. A bank employee books on the guest's behalf | Decision |
+| A7 | Virtual cards and loyalty or frequent flyer programmes are in scope. PCI DSS applies | Decision |
 | A8 | The arrangement is treated as outsourcing as well as an ICT service | see section 8 |
 | A9 | Daily allowance is calculated by the platform and paid by the bank's payroll or expense system. The vendor does not pay employees | Assumption |
 | A10 | Insurance is the bank's group policy. The platform registers trips with the group insurer | Assumption |
@@ -282,4 +284,4 @@ Focus areas for later stages:
 - Inherent risk: **very high (25 of 27)**
 - Criticality: **critical or important function**
 - Tier: **1**
-- outsourcing: **yes**
+- Outsourcing: **yes**
