@@ -1,10 +1,8 @@
-# Follow-up assessment: Vendor X's reply (simulated)
-
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts. 
+# Follow-up assessment: Vendor X's reply
 
 > **Replies received:** 6 Nov 2026 (first) and 27 Nov 2026 (second evidence batch). **Evidence IDs:** EV-26 to EV-66.
 
-## 1. Cover note from the vendor (simulated, sent with the second evidence batch on 27 Nov 2026)
+## 1. Cover note from the vendor (sent with the second evidence batch on 27 Nov 2026)
 
 > Thank you for the follow-up request. We have answered 63 of the 65 new questions and all 23 re-asked questions. Our architecture and security specification is attached. Where we cannot share a document (the full AI provider contract, the full penetration test report, source code), we have offered a summary or a supervised review. We have made several changes since your first assessment: privileged access is now just-in-time, break-glass credentials are vaulted, free text is redacted from logs, VIP profiles are masked for support staff, and the AI assistant is switched off for your tenant. We cannot agree unrestricted audit rights or a 24-hour incident notice, and we have made counter-proposals.
 
