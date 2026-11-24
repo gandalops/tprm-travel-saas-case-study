@@ -1,8 +1,5 @@
 # Incident scenario: stolen connector credential (tabletop)
 
-> **Fictional case study. The scenario, times and results are simulated.** Regulatory deadlines are indicative. Check the current texts and the bank's own incident process.
->
-
 ## 1. Why this scenario
 
 It tests the weakest links found in the assessment: wide access to connector credentials (FND-01), annual rotation (FND-02), no mutual TLS (FND-09), and slow vendor notification (FND-16). It also shows how the controls we required would change the outcome.
@@ -13,7 +10,9 @@ An attacker compromises a vendor engineer's laptop and uses the break-glass rout
 
 ## 3. Timeline: as found and after remediation
 
-| Step | As found (simulated) | After remediation |
+The times below are tabletop assumptions, not measurements.
+
+| Step | As found | After remediation |
 |---|---|---|
 | Detection | The bank's security team sees roster downloads at about six times the normal volume. Detected 4 hours after the first one | The same alert, plus the vendor's alert on break-glass use (the approval log shows no approval) |
 | Containment on the bank's side | The bank disables the read-only service account in its HR system within 1 hour. This works because the account belongs to the bank | The same |
@@ -25,6 +24,8 @@ An attacker compromises a vendor engineer's laptop and uses the break-glass rout
 | Recovery | Re-key, review other service accounts, restore the nightly sync, hold a review | The same, faster |
 
 ## 4. Regulatory and communication steps
+
+Deadlines are indicative. Check the current texts and the bank's own incident process.
 
 | Step | Who | Note |
 |---|---|---|
