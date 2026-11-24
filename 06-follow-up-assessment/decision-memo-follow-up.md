@@ -1,6 +1,5 @@
 # Decision memo: onboarding Vendor X travel platform (after the follow-up assessment)
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts. 
 > **Date:** 4 Dec 2026. **Replaces:** the memo of 4 Oct 2026 (kept unchanged in `05-assessment`). **For:** risk committee, 11 Dec 2026.
 
 ## 1. Management summary
@@ -24,7 +23,7 @@
 
 | Area | Initial assessment | After the follow-up |
 |---|---|---|
-| High findings | 5 | 2 (1 closed, 1 avoided, 2 reduced to Medium, 1 still High, 1 new) |
+| High findings | 5 | 2 open (of the 5: 1 closed, 1 avoided, 2 reduced to Medium, 1 still High. Plus 1 new High) |
 | Findings total | 22 | 33 |
 | Risks at High or above (existing 17) | 6 | 3 |
 | Conditions | 8 plus 2 feature gates | 10 plus 2 feature gates |
@@ -76,7 +75,7 @@ Risks already mitigated with verified evidence: RR-06, RR-13, RR-14, RR-16.
 
 ## 6. Residual risk
 
-After follow-up assessmen the verified picture is 1 Very high, 3 High, 13 Medium and 4 Low among 21 risks. The target after the remaining actions is no risk above Medium (12 Medium, 9 Low). The three High risks today are support access from India (RR-02), late notice and the liability cap (RR-08), and audit and exit rights (RR-11), and the Very high risk is the US backups (RR-18).
+After the follow-up assessment, the verified picture is 1 Very high, 3 High, 13 Medium and 4 Low among 21 risks. The target after the remaining actions is no risk above Medium (12 Medium, 9 Low). The three High risks today are support access from India (RR-02), late notice and the liability cap (RR-08), and audit and exit rights (RR-11), and the Very high risk is the US backups (RR-18).
 
 ## 7. Next steps
 
