@@ -1,7 +1,5 @@
 # Follow-up assessment: the bank's request to Vendor X
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders. All vendor replies, evidence, dates and scores are simulated. Legal references are indicative and must be checked against the official texts. 
->
 > **Request date:** 12 Oct 2026. **First reply due:** 6 Nov 2026. **Builds on:** the initial assessment (folders 01 to 05, unchanged).
 
 ## 1. Why a follow-up assessment
