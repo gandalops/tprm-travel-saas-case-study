@@ -1,23 +1,23 @@
 # Stage 2: Vendor profile
 
-> **Fictional case study. All vendor information in this document is simulated.** Vendor X, Card Provider Y and every figure, date and certificate below are invented for the exercise.
->
->  **Builds on:** Stage 1 (scope S1 to S12, data D1 to D16, Tier 1, critical or important function)
+> **Builds on:** Stage 1 (scope S1 to S12, data D1 to D16, Tier 1, critical or important function)
 
 ## 1. Purpose of this stage
 
-Answer four questions about Vendor X before looking at architecture or controls:
+Before we look at architecture or controls, we want four things clear about Vendor X:
 
 1. Who are they, and are they a sound business to depend on?
 2. What exactly do they offer, and how does it map to our scope?
 3. Where do they host and operate, and who runs what?
 4. What do they **claim**, and what would we need as **evidence**?
 
-Rule used throughout: a vendor statement is a **claim** until the bank has seen evidence. Stage 5 tests the claims.
+Our rule throughout: a vendor statement is a **claim** until we have seen evidence. Stage 5 tests the claims.
 
-## 2. Who they are (simulated)
+## 2. Who they are
 
-| Item | Vendor X (simulated) |
+This is how Vendor X presents itself in its RFP response and trust materials. We have not verified any of it yet.
+
+| Item | Vendor X |
 |---|---|
 | Legal entity | Vendor X Travel Platform Ltd |
 | Headquarters | Ireland (EU) |
@@ -45,7 +45,7 @@ These checks sit beside the security assessment. A secure vendor that fails fina
 
 ## 4. What they offer, mapped to our scope
 
-| Scope ID | Vendor module (simulated) | How it works |
+| Scope ID | Vendor module | How it works |
 |---|---|---|
 | S1 | Booking engine | Flights through GDS and direct airline connections, rail, hotels, ground transport |
 | S2 | VIP desk | Restricted profiles, named agents, itinerary visibility limited to chosen users |
@@ -62,7 +62,7 @@ These checks sit beside the security assessment. A secure vendor that fails fina
 
 ## 5. Where and how they operate
 
-### 5.1 Hosting (simulated)
+### 5.1 Hosting
 
 | Item | Claim |
 |---|---|
@@ -83,7 +83,7 @@ These checks sit beside the security assessment. A secure vendor that fails fina
 | Software releases | Weekly releases through a pipeline with automated tests |
 | Connector | **Operated by the vendor**, one dedicated instance per client in the vendor's cloud (decision A12). The bank supplies a read-only service account and an approval endpoint |
 
-## 6. Assurance claimed (simulated)
+## 6. Assurance claimed
 
 | ID | Certification or report | What the vendor states | Date |
 |---|---|---|---|
@@ -95,7 +95,9 @@ These checks sit beside the security assessment. A secure vendor that fails fina
 
 ## 7. Claims register
 
-Each row is something the vendor says. The last column shows what the bank must check, so the claim can become a verified fact or a finding.
+Each row is something the vendor says about itself. The last column is what we check, so that each claim becomes either a verified fact or a finding.
+
+> **Analyst's note.** We read this register as a list of promises. Some are easy to test, such as the age of the SOC 2 report. Others only show up when we put two sources side by side. We also record where each claim came from (RFP response, trust page, whitepaper or contract draft), because a claim written into a contract draft carries more weight than a line on a marketing page.
 
 | ID | Claim | Source | Evidence to request | What to verify |
 |---|---|---|---|---|
@@ -132,7 +134,7 @@ A fourth party is a supplier of Vendor X that handles the bank's data or support
 
 The bank has **no direct contract** with FP1 to FP4 and FP6 to FP10, so it cannot audit or enforce controls there. Control comes through the vendor contract and the subprocessor list.
 
-## 9. Questions settled in this stage (simulated)
+## 9. Questions settled in this stage
 
 | Question | Proposed answer | Where it is tested next |
 |---|---|---|
@@ -143,7 +145,7 @@ The bank has **no direct contract** with FP1 to FP4 and FP6 to FP10, so it canno
 
 ## 10. Early observations to test in Stage 5
 
-These come from the claims register. They are **hypotheses**, not findings.
+These come from the claims register. They are **hypotheses to test**, not findings.
 
 1. The SOC 2 audit period ended ten months ago, so a bridge letter is needed.
 2. The SOC 2 and ISO scope may not cover the visa, gifts and card modules.
@@ -159,7 +161,7 @@ These come from the claims register. They are **hypotheses**, not findings.
 
 | ID | Decision | Basis |
 |---|---|---|
-| A12 | The vendor operates the connector, in a dedicated instance per client in the vendor's cloud. The vendor holds the credentials the bank supplies (read-only HR service account, approval endpoint access). The bank must allow connections from the vendor's cloud to its HR system. The vendor is assessed on its secrets handling, staff access and connector security | Case decision |
+| A12 | The vendor operates the connector, in a dedicated instance per client in the vendor's cloud. The vendor holds the credentials the bank supplies (read-only HR service account, approval endpoint access). The bank must allow connections from the vendor's cloud to its HR system. The vendor is assessed on its secrets handling, staff access and connector security | Decision |
 
 ## Addendum: FP11 (added after Stage 5, change PF-1)
 
