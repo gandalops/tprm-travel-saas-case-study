@@ -1,7 +1,5 @@
 # Decision memo: onboarding Vendor X travel platform
 
-> **Fictional case study.** Example Bank and Vendor X are placeholders, and the assessment results are simulated. 
->
 > **Date:** 4 Oct 2026
 
 ## 1. Management summary
