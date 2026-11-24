@@ -1,6 +1,6 @@
 # Master services agreement: blank outline
 
-> **Fictional case study.** A blank outline for illustration, headings only. Not legal advice.
+> A blank outline, headings only. It is a working list of clauses, not legal advice. Legal and Procurement draft the actual text. The required terms are tracked in `contract-checklist.xlsx` (CC-01 to CC-24).
 
 - Parties and definitions
 - Scope of services (service description, locations)
